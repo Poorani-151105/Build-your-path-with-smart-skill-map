@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment | Build Your Path with Smart Skill Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <nav>
+        <div class="logo">Smart Skill Map</div>
+        <ul class="nav-links" style="display: flex; align-items: center; gap: 2rem;">
+            <li id="serverStatus" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; font-weight: 800; color: var(--text-secondary);">
+                <div id="statusLight" style="width: 8px; height: 8px; border-radius: 50%; background: #ef4444; box-shadow: 0 0 10px #ef4444;"></div>
+                SERVER: DISCONNECTED
+            </li>
+            <li><a href="dashboard.html">Back to Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main style="flex: 1; padding: 40px 5%; display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <!-- Assessment Selection Hub -->
+        <div id="setupView" style="width: 100%; max-width: 1200px;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Build Your <span style="background: var(--primary-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Path Hub</span></h1>
+                <p style="color: var(--text-secondary);">Choose your track and specialize in your chosen field.</p>
+            </div>
+
+            <!-- Type Switcher -->
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem;">
+                <button id="typeProf" class="btn btn-primary" onclick="setTrackType('PROFESSIONAL')">Professional Degrees</button>
+                <button id="typeNonProf" class="btn btn-outline" onclick="setTrackType('NON_PROFESSIONAL')">Skill-Based Paths</button>
+            </div>
+            
+            <!-- Domain Categories -->
+            <div class="dashboard-grid" id="domainGrid">
+                <!-- Injected via JS -->
+            </div>
+            
+            <!-- Specific Courses List -->
+            <div id="courseList" class="glass-card animate-fade" style="display: none; margin-top: 2rem;">
+                <h3 id="selectedDomainTitle" style="margin-bottom: 1.5rem; color: var(--accent-color);">Engineering Tracks</h3>
+                <div id="courseItems" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <!-- Injected via JS -->
+                </div>
+                <button onclick="backToDomains()" class="btn btn-outline" style="margin-top: 2rem;">Back to Domains</button>
+            </div>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quizView" class="glass-card animate-fade" style="display: none; width: 100%; max-width: 800px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+                <span id="questionCount" style="color: var(--text-secondary);">Adapting...</span>
+                <span id="difficultyBadge" style="background: rgba(34, 211, 238, 0.1); color: var(--accent-color); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 800;">EASY</span>
+            </div>
+            
+            <div id="progressContainer" style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; margin-bottom: 2.5rem; overflow: hidden;">
+                <div id="progressBar" style="width: 0%; height: 100%; background: var(--primary-gradient); transition: width 0.3s ease;"></div>
+            </div>
+
+            <h3 id="questionText" style="font-size: 1.5rem; margin-bottom: 2rem;">Loading question...</h3>
+            
+            <div id="optionsContainer" style="display: flex; flex-direction: column; gap: 1rem;">
+                <!-- Options will be injected here -->
+            </div>
+
+            <div style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center;">
+                <span id="adaptiveNotice" style="font-size: 0.8rem; color: var(--text-secondary);">AI Engine active</span>
+                <button id="nextBtn" onclick="handleNext()" class="btn btn-primary" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Result View -->
+        <div id="resultView" class="glass-card animate-fade" style="display: none; max-width: 800px; text-align: center; width: 100%;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+            <h2 style="margin-bottom: 1rem;">Assessment Complete!</h2>
+            <p style="color: var(--text-secondary);">Your skill vector has been updated based on adaptive performance.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; text-align: left;">
+                <!-- User Score -->
+                <div class="glass-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem;">
+                    <div style="font-size: 0.75rem; color: var(--accent-color); font-weight: 800; margin-bottom: 0.5rem; letter-spacing: 1px;">YOUR SCORE</div>
+                    <div style="font-size: 4rem; font-weight: 800; color: var(--accent-color);" id="finalScore">0%</div>
+                    <p id="difficultyAchieved" style="font-weight: 700; color: var(--text-primary);">Peak Level: Entry</p>
+                </div>
+
+                <!-- Best Fit Recommendation -->
+                <div id="bestFitCard" class="glass-card" style="border: 2px solid var(--accent-color); position: relative; padding: 2rem;">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-gradient); padding: 4px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 900; color: var(--bg-dark);">BEST MATCH</div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--text-secondary); margin-bottom: 0.5rem;">System Recommendation:</h4>
+                        <h3 id="bestFitTitle" style="font-size: 1.4rem; color: var(--text-primary);">Analyzing...</h3>
+                        <p id="bestFitMatch" style="color: var(--accent-color); font-weight: 700; font-size: 0.9rem;">--% Match</p>
+                    </div>
+                    <button id="enrollSuggestedBtn" onclick="enrollSuggested()" class="btn btn-primary" style="width: 100%; font-size: 0.8rem;">Start Daily Track</button>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 3rem;">
+                <a href="dashboard.html" class="btn btn-outline" style="min-width: 150px;">Detailed Analytics</a>
+                <a href="roadmap.html" class="btn btn-outline" style="min-width: 150px;">Explore All Paths</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Real Project Configuration
+        const TOTAL_QUESTIONS_PER_SESSION = 10;
+        let currentTrack = 'PROFESSIONAL';
+        let allCareers = [];
+        let allAssessments = [];
+        
+        let assessmentBank = null;
+        let activeAssessmentID = null;
+        
+        const DOMAINS = {
+            PROFESSIONAL: [
+                { id: 'ENGINEERING', name: 'Engineering', icon: '💻', desc: 'CS, AI, Data Science...' },
+                { id: 'MEDICAL', name: 'Medical & Healthcare', icon: '🏥', desc: 'MBBS, Dental, Pharmacy...' },
+                { id: 'LAW', name: 'Legal Studies', icon: '⚖️', desc: 'Corporate, Criminal...' },
+                { id: 'BUSINESS', name: 'Management (BBA/MBA)', icon: '📊', desc: 'Marketing, Finance, HR...' },
+                { id: 'CHARTERED', name: 'Chartered / Finance', icon: '🧾', desc: 'CA, CMA, CS...' }
+            ],
+            NON_PROFESSIONAL: [
+                { id: 'CREATIVE', name: 'Creative Fields', icon: '🎨', desc: 'Design, UI/UX, Photo...' },
+                { id: 'IT', name: 'IT & Digital Skills', icon: '🛠️', desc: 'Web & App Dev, Marketing...' },
+                { id: 'SOFT_SKILLS', name: 'Soft Skills', icon: '🗣️', desc: 'Leadership, Speaking...' },
+                { id: 'ARTS', name: 'Arts & Humanities', icon: '🎭', desc: 'Writing, Journalism...' }
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTrackType('PROFESSIONAL');
+            fetchInitialData();
+        });
+
+        async function fetchInitialData() {
+            const grid = document.getElementById('domainGrid');
+            grid.innerHTML = '<div class="loading-spinner"></div><p style="text-align:center; color:var(--text-secondary);">Connecting to Secure Skill Server...</p>';
+            
+            try {
+                const user = JSON.parse(localStorage.getItem('user'));
+                const [cRes, aRes] = await Promise.all([
+                    fetch('/api/careers', {
+                        headers: { 'Authorization': `Bearer ${user ? user.token : ''}` }
+                    }),
+                    fetch('/api/assessments', {
+                        headers: { 'Authorization': `Bearer ${user ? user.token : ''}` }
+                    })
+                ]);
+                allCareers = await cRes.json();
+                allAssessments = await aRes.json();
+                
+                // Update Status Light
+                document.getElementById('statusLight').style.background = '#22d3ee';
+                document.getElementById('statusLight').style.boxShadow = '0 0 10px #22d3ee';
+                document.getElementById('serverStatus').innerHTML = '<div style="width: 8px; height: 8px; border-radius: 50%; background: #22d3ee; box-shadow: 0 0 10px #22d3ee;"></div> SERVER: ACTIVE';
+                
+                renderDomains(); // Success
+            } catch (err) { 
+                console.error("Server connection failed:", err);
+                grid.innerHTML = `
+                    <div class="glass-card" style="grid-column: 1/-1; text-align:center; padding: 3rem;">
+                        <h3 style="color: #ef4444;">Server Connection Error</h3>
+                        <p style="margin: 1rem 0;">Please ensure the Backend is running and the SQL Reset script was applied.</p>
+                        <button onclick="location.reload()" class="btn btn-outline">Try Again</button>
+                    </div>
+                `;
+            }
+        }
+
+        function setTrackType(type) {
+            currentTrack = type;
+            document.getElementById('typeProf').className = type === 'PROFESSIONAL' ? 'btn btn-primary' : 'btn btn-outline';
+            document.getElementById('typeNonProf').className = type === 'NON_PROFESSIONAL' ? 'btn btn-primary' : 'btn btn-outline';
+            renderDomains();
+        }
+
+        function renderDomains() {
+            const grid = document.getElementById('domainGrid');
+            grid.innerHTML = '';
+            document.getElementById('domainGrid').style.display = 'grid';
+            document.getElementById('courseList').style.display = 'none';
+
+            DOMAINS[currentTrack].forEach(domain => {
+                const div = document.createElement('div');
+                div.className = 'glass-card animate-fade';
+                div.style.textAlign = 'center'; div.style.cursor = 'pointer';
+                div.onclick = () => loadCoursesForDomain(domain);
+                div.innerHTML = `
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">${domain.icon}</div>
+                    <h3>${domain.name}</h3>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">${domain.desc}</p>
+                `;
+                grid.appendChild(div);
+            });
+        }
+
+        function loadCoursesForDomain(domain) {
+            document.getElementById('domainGrid').style.display = 'none';
+            document.getElementById('courseList').style.display = 'block';
+            document.getElementById('selectedDomainTitle').innerText = domain.name;
+
+            const container = document.getElementById('courseItems');
+            container.innerHTML = '';
+
+            // Use domain.id which is the exact DB category value (e.g. ENGINEERING, MEDICAL, IT)
+            const filtered = allCareers.filter(c => c.pathType === currentTrack && c.domainCategory === domain.id);
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="glass-card" style="grid-column: 1/-1; text-align:center; padding: 2rem; border: 1px dashed var(--glass);">
+                        <p style="color: var(--text-secondary);">New specialized pathways for ${domain.name} are coming soon.</p>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem;">Try explore "Skill-Based Paths" for related options.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(course => {
+                const div = document.createElement('div');
+                div.className = 'glass-card animate-fade';
+                div.style.padding = '1.5rem';
+                
+                let assessmentIndex = 0;
+                if (allAssessments && allAssessments.length > 0) {
+                    // 1-TO-1 STRICT TITLE MATCHING: Find the assessment whose title matches THIS specific course
+                    const matchIdx = allAssessments.findIndex(a => a.title.toUpperCase() === course.title.toUpperCase());
+                    if (matchIdx >= 0) {
+                        assessmentIndex = matchIdx;
+                    } else {
+                        // Fallback: find any assessment in the same category
+                        const fallbackIdx = allAssessments.findIndex(a => a.category === domain.id);
+                        if (fallbackIdx >= 0) assessmentIndex = fallbackIdx;
+                    }
+                }
+
+                div.innerHTML = `
+                    <h4 style="margin-bottom: 0.5rem;">${course.title}</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.5rem;">${course.description}</p>
+                    <button onclick="startAdaptiveForCourse('${course.id}', ${assessmentIndex})" class="btn btn-primary" style="font-size: 0.8rem; width: 100%;">Begin Career Assessment</button>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function backToDomains() {
+            renderDomains();
+        }
+
+        function startAdaptiveForCourse(courseId, assessmentIdx) {
+            // Store selected course for later redirection or detail
+            const course = allCareers.find(c => c.id == courseId);
+            localStorage.setItem('targetCourse', JSON.stringify(course));
+            startAdaptive(assessmentIdx);
+        }
+
+        // --- Core Quiz Engine Starts ---
+        let session = {
+            currentIdx: 0,
+            currentLevel: 'easy',
+            correctStreak: 0,
+            incorrectStreak: 0,
+            earnedWeight: 0,
+            totalWeight: 0,
+            usedIndices: { easy: new Set(), medium: new Set(), hard: new Set() },
+            history: []
+        };
+
+        function startAdaptive(index) {
+            if (!allAssessments || allAssessments.length === 0) {
+                console.error("Sync Error: Assess bank empty.");
+                return;
+            }
+            
+            const test = allAssessments[index] || allAssessments[0];
+            activeAssessmentID = test.id;
+            
+            try {
+                const rawBank = typeof test.questionsJson === 'string' ? JSON.parse(test.questionsJson) : test.questionsJson;
+                assessmentBank = rawBank.easy ? rawBank : { easy: rawBank, medium: [], hard: [] };
+            } catch(e) { 
+                console.error("JSON Error", e);
+                return;
+            }
+
+            // Init session
+            session = {
+                currentIdx: 0,
+                currentLevel: 'easy',
+                correctStreak: 0,
+                incorrectStreak: 0,
+                earnedWeight: 0,
+                totalWeight: 0,
+                usedIndices: { easy: new Set(), medium: new Set(), hard: new Set() },
+                history: []
+            };
+
+            document.getElementById('setupView').style.display = 'none';
+            document.getElementById('quizView').style.display = 'block';
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            if (session.currentIdx >= TOTAL_QUESTIONS_PER_SESSION) {
+                showResults();
+                return;
+            }
+
+            // Find an unused question. Start at current level, fall back if empty.
+            let level = session.currentLevel;
+            let questions = assessmentBank[level];
+            
+            // Comprehensive Exhaustion & Fallback Logic
+            const levels = ['easy', 'medium', 'hard'];
+            let foundValid = false;
+            
+            // Try current level first, then search others
+            let checkOrder = [level, ...levels.filter(l => l !== level)];
+            
+            for (let l of checkOrder) {
+                if (assessmentBank[l] && session.usedIndices[l].size < assessmentBank[l].length) {
+                    level = l;
+                    questions = assessmentBank[l];
+                    foundValid = true;
+                    break;
+                }
+            }
+
+            if (!foundValid) {
+                console.warn("Question bank exhausted for this session.");
+                showResults();
+                return;
+            }
+
+            // Select random unused question from the chosen level
+            let qIdx;
+            let possibleIndices = Array.from({length: questions.length}, (_, i) => i)
+                                       .filter(i => !session.usedIndices[level].has(i));
+            
+            qIdx = possibleIndices[Math.floor(Math.random() * possibleIndices.length)];
+
+            session.usedIndices[level].add(qIdx);
+            session.currentQuestion = questions[qIdx];
+            session.currentLevel = level; // Actual level used
+
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = session.currentQuestion;
+            document.getElementById('difficultyBadge').innerText = session.currentLevel.toUpperCase();
+            document.getElementById('difficultyBadge').style.color = session.currentLevel === 'hard' ? '#ef4444' : (session.currentLevel === 'medium' ? '#fbbf24' : '#22d3ee');
+            document.getElementById('questionCount').innerText = `Question ${session.currentIdx + 1} of ${TOTAL_QUESTIONS_PER_SESSION}`;
+            document.getElementById('questionText').innerText = q.q || q.question;
+            document.getElementById('progressBar').style.width = `${((session.currentIdx + 1) / TOTAL_QUESTIONS_PER_SESSION) * 100}%`;
+
+            const container = document.getElementById('optionsContainer');
+            container.innerHTML = '';
+            
+            // Clear any previously selected index for this new question
+            session.selectedIdx = undefined;
+            
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'btn btn-outline'; btn.style.textAlign = 'left'; btn.style.width = '100%';
+                btn.innerText = opt;
+                btn.onclick = () => {
+                    const btns = document.querySelectorAll('#optionsContainer .btn');
+                    btns.forEach(b => { 
+                        b.style.borderColor = 'rgba(255,255,255,0.1)'; 
+                        b.style.background = 'transparent'; 
+                        // Note: We no longer disable the buttons, allowing the user to change their mind!
+                    });
+                    btn.style.borderColor = 'var(--accent-color)'; 
+                    btn.style.background = 'rgba(34, 211, 238, 0.1)';
+                    
+                    // Save their current choice instead of processing it immediately
+                    session.selectedIdx = idx;
+                    document.getElementById('nextBtn').disabled = false;
+                };
+                container.appendChild(btn);
+            });
+            document.getElementById('nextBtn').disabled = true;
+        }
+
+        function processAnswer(idx) {
+            const q = session.currentQuestion;
+            const weight = session.currentLevel === 'hard' ? 3 : (session.currentLevel === 'medium' ? 2 : 1);
+            session.totalWeight += weight;
+
+            if (idx === q.answer) {
+                session.earnedWeight += weight;
+                session.correctStreak++;
+                session.incorrectStreak = 0;
+                // AI Logic
+                if (session.correctStreak >= 2 && session.currentLevel === 'easy') session.currentLevel = 'medium';
+                else if (session.correctStreak >= 2 && session.currentLevel === 'medium') session.currentLevel = 'hard';
+            } else {
+                session.incorrectStreak++;
+                session.correctStreak = 0;
+                // AI Logic
+                if (session.incorrectStreak >= 1 && session.currentLevel === 'hard') session.currentLevel = 'medium';
+                else if (session.incorrectStreak >= 1 && session.currentLevel === 'medium') session.currentLevel = 'easy';
+            }
+        }
+
+        function handleNext() {
+            // Process the choice the user finally settled on
+            if (session.selectedIdx !== undefined) {
+                processAnswer(session.selectedIdx);
+            }
+            session.currentIdx++;
+            nextQuestion();
+        }
+
+        async function showResults() {
+            const finalScore = Math.round((session.earnedWeight / session.totalWeight) * 100);
+            document.getElementById('quizView').style.display = 'none';
+            document.getElementById('resultView').style.display = 'block';
+            document.getElementById('finalScore').innerText = finalScore + "%";
+            document.getElementById('difficultyAchieved').innerText = "Expertise Recognized: " + session.currentLevel.toUpperCase();
+
+            // Submit to Backend
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user) {
+                try {
+                    await fetch('/api/assessments/submit', {
+                        method: 'POST',
+                        headers: { 
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${user.token}`
+                        },
+                        body: JSON.stringify({ userId: user.id, assessmentId: activeAssessmentID, score: finalScore })
+                    });
+                    
+                    // Fetch Best Fit Recommendation after score is processed
+                    fetchBestFit(user.id);
+                } catch (err) { console.error("Submit Error:", err); }
+            }
+        }
+
+        let suggestedCareerId = null;
+
+        async function fetchBestFit(userId) {
+            try {
+                const userObj = JSON.parse(localStorage.getItem('user'));
+                const response = await fetch(`/api/profile/${userId}/recommendations`, {
+                    headers: { 'Authorization': `Bearer ${userObj.token}` }
+                });
+                const recommendations = await response.json();
+                
+                // Fetch targeted course from local storage to ensure domain accuracy
+                const targetCourse = JSON.parse(localStorage.getItem('targetCourse'));
+                const testScoreStr = document.getElementById('finalScore').innerText;
+                const parseScore = parseInt(testScoreStr) || 85; 
+
+                if (recommendations && recommendations.length > 0) {
+                    let top = recommendations[0];
+                    
+                    // Strictly enforce domain matching for the test they just took
+                    if (targetCourse) {
+                        const related = recommendations.find(r => r.career.id === targetCourse.id);
+                        if (related) {
+                            top = related;
+                        } else {
+                            top = { career: targetCourse, matchPercentage: parseScore + (Math.random()*10) };
+                        }
+                    }
+                    
+                    suggestedCareerId = top.career.id;
+                    
+                    document.getElementById('bestFitTitle').innerText = top.career.title;
+                    document.getElementById('bestFitMatch').innerText = Math.round(top.matchPercentage) + "% Match";
+                }
+            } catch (err) {
+                console.error("Best Fit Error:", err);
+            }
+        }
+
+        async function enrollSuggested() {
+            // Backup redirect to prevent user getting stuck
+            const fallbackTimeout = setTimeout(() => {
+                window.location.href = 'daily-plan.html';
+            }, 1500);
+
+            if (!suggestedCareerId) return;
+
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) {
+                window.location.href = 'daily-plan.html';
+                return;
+            }
+            
+            try {
+                await fetch(`/api/profile/${user.id}/enroll/${suggestedCareerId}`, {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${user.token}` }
+                });
+                clearTimeout(fallbackTimeout);
+                window.location.href = 'daily-plan.html';
+            } catch (err) {
+                console.error("Enrollment failed:", err);
+                window.location.href = 'daily-plan.html';
+            }
+        }
+
+        function backToDomains() {
+            document.getElementById('domainGrid').style.display = 'grid';
+            document.getElementById('courseList').style.display = 'none';
+            document.getElementById('setupView').style.display = 'block';
+            document.getElementById('resultView').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

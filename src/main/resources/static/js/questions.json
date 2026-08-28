@@ -1,0 +1,162 @@
+{
+  "Engineering": [
+    {
+      "q": "Which component is known as the brain of the computer?",
+      "options": [
+        "RAM",
+        "CPU",
+        "HDD",
+        "GPU"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does HTTP stand for?",
+      "options": [
+        "HyperText Transfer Protocol",
+        "High Transition Text Process",
+        "Hyperlink Text Trade",
+        "None"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which data structure follows LIFO (Last In First Out)?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Array",
+        "Linked List"
+      ],
+      "answer": 1
+    }
+  ],
+  "Doctor": [
+    {
+      "q": "Which organ filters blood in the human body?",
+      "options": [
+        "Lungs",
+        "Kidneys",
+        "Stomach",
+        "Heart"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the normal body temperature of a human in Celsius?",
+      "options": [
+        "32°C",
+        "37°C",
+        "40°C",
+        "98°C"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Which blood group is known as the universal donor?",
+      "options": [
+        "A+",
+        "B+",
+        "AB+",
+        "O-"
+      ],
+      "answer": 3
+    }
+  ],
+  "Law": [
+    {
+      "q": "Who is the head of the judiciary in a country typically?",
+      "options": [
+        "President",
+        "Chief Justice",
+        "Prime Minister",
+        "Police Chief"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is a 'Habeas Corpus' petition related to?",
+      "options": [
+        "Property disputes",
+        "Unlawful detention",
+        "Divorce",
+        "Taxes"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How many years of study are typically required for an LLB in India after graduation?",
+      "options": [
+        "1 Year",
+        "2 Years",
+        "3 Years",
+        "5 Years"
+      ],
+      "answer": 2
+    }
+  ],
+  "Diploma": [
+    {
+      "q": "Which instrument is used to measure current?",
+      "options": [
+        "Voltmeter",
+        "Ammeter",
+        "Galvanometer",
+        "Multimeter"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the unit of power?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Ohm",
+        "Ampere"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the main ingredient of concrete?",
+      "options": [
+        "Cement",
+        "Wood",
+        "Plastic",
+        "Glass"
+      ],
+      "answer": 0
+    }
+  ],
+  "Skill": [
+    {
+      "q": "Which of these is a 'soft skill'?",
+      "options": [
+        "Programming",
+        "Emotional Intelligence",
+        "Data Analysis",
+        "Welding"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What is the first step in problem solving?",
+      "options": [
+        "Implementing a solution",
+        "Defining the problem",
+        "Brainstorming",
+        "Ignoring it"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does 'empathy' mean in teamwork?",
+      "options": [
+        "Ignoring others",
+        "Understanding others' feelings",
+        "Comparing yourself to others",
+        "None"
+      ],
+      "answer": 1
+    }
+  ]
+}

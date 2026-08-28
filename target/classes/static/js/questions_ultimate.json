@@ -1,0 +1,2450 @@
+{
+    "Computer Science Engineering": [
+        {
+            "q": "[CSE-MODE] 1: Which data structure uses LIFO?",
+            "options": [
+                "Queue",
+                "Stack",
+                "Array",
+                "Linked List"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 2: Complexity of Binary Search?",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(n^2)",
+                "O(1)"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 3: HTML stands for?",
+            "options": [
+                "HyperText Markup Language",
+                "High Text Machine",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CSE-MODE] 4: Which is a primary key?",
+            "options": [
+                "Duplicate id",
+                "Unique identifier",
+                "Null value",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 5: Python is a ____ language.",
+            "options": [
+                "Low level",
+                "High level",
+                "Machine",
+                "Assembly"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 6: What is a bit?",
+            "options": [
+                "0 or 1",
+                "Byte",
+                "File",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CSE-MODE] 7: HTTP port?",
+            "options": [
+                "80",
+                "443",
+                "22",
+                "21"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CSE-MODE] 8: SQL is for?",
+            "options": [
+                "Design",
+                "Databases",
+                "Networking",
+                "AI"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 9: RAM is?",
+            "options": [
+                "Permanent",
+                "Volatile",
+                "Slow",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CSE-MODE] 10: Logic gate for 'NOT'?",
+            "options": [
+                "Inverter",
+                "AND",
+                "OR",
+                "XOR"
+            ],
+            "answer": 0
+        }
+    ],
+    "Information Technology": [
+        {
+            "q": "[IT-MODE] 1: What is a Cloud?",
+            "options": [
+                "Atmosphere",
+                "Remote server network",
+                "A gas",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 2: VPN is for?",
+            "options": [
+                "Speed",
+                "Privacy/Security",
+                "Gaming",
+                "Printing"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 3: DNS translates?",
+            "options": [
+                "Code to Text",
+                "Domain to IP",
+                "File to Folder",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 4: Which is a search engine?",
+            "options": [
+                "Chrome",
+                "Google",
+                "WhatsApp",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 5: What is phishing?",
+            "options": [
+                "Sport",
+                "Cyber attack",
+                "Networking",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 6: IP stands for?",
+            "options": [
+                "Internet Protocol",
+                "Internal Process",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[IT-MODE] 7: LAN is for?",
+            "options": [
+                "World",
+                "Local area",
+                "Space",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 8: Mainframe is a?",
+            "options": [
+                "Small pc",
+                "Large powerful computer",
+                "Mouse",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 9: Cookie in browser?",
+            "options": [
+                "Food",
+                "Stored data",
+                "Virus",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[IT-MODE] 10: Cyber security protects?",
+            "options": [
+                "Papers",
+                "Digital systems",
+                "Cars",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Electronics and Communication Engineering": [
+        {
+            "q": "[ECE-MODE] 1: Signal with two levels?",
+            "options": [
+                "Analog",
+                "Digital",
+                "Smooth",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 2: Unit of Resistance?",
+            "options": [
+                "Volt",
+                "Ohm",
+                "Ampere",
+                "Watt"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 3: Transistor has how many terminals?",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "1"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 4: AM stands for?",
+            "options": [
+                "Amplitude Modulation",
+                "Auto Mode",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[ECE-MODE] 5: Silicon is a?",
+            "options": [
+                "Conductor",
+                "Semiconductor",
+                "Insulator",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 6: Fiber optics use?",
+            "options": [
+                "Copper",
+                "Light",
+                "Water",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 7: Antenna is for?",
+            "options": [
+                "Storing",
+                "Transmitting/Receiving",
+                "Cooling",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 8: DC is?",
+            "options": [
+                "Direct Current",
+                "Digital",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[ECE-MODE] 9: Voltage is measured in?",
+            "options": [
+                "Ohms",
+                "Volts",
+                "Amps",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[ECE-MODE] 10: PCB is?",
+            "options": [
+                "Printed Circuit Board",
+                "Power Block",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Electrical and Electronics Engineering": [
+        {
+            "q": "[EEE-MODE] 1: Transformer works on?",
+            "options": [
+                "DC",
+                "AC",
+                "Pulse",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[EEE-MODE] 2: Unit of Power?",
+            "options": [
+                "Watt",
+                "Joule",
+                "Volt",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[EEE-MODE] 3: Battery converts?",
+            "options": [
+                "Chem to Elec",
+                "Heat to Elec",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[EEE-MODE] 4: Fuse wire should have?",
+            "options": [
+                "High melt pt",
+                "Low melt pt",
+                "No melt pt",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[EEE-MODE] 5: Motor converts Elec to?",
+            "options": [
+                "Heat",
+                "Mechanical",
+                "Light",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[EEE-MODE] 6: Generator converts Mech to?",
+            "options": [
+                "Heat",
+                "Electrical",
+                "Sound",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[EEE-MODE] 7: Current unit?",
+            "options": [
+                "Volt",
+                "Ampere",
+                "Ohm",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[EEE-MODE] 8: Resistance in series?",
+            "options": [
+                "Add",
+                "Subtract",
+                "Divide",
+                "Multiply"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[EEE-MODE] 9: Multi-meter measures?",
+            "options": [
+                "V",
+                "I",
+                "R",
+                "All"
+            ],
+            "answer": 3
+        },
+        {
+            "q": "[EEE-MODE] 10: Earth wire is?",
+            "options": [
+                "Decoration",
+                "Safety",
+                "Power",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Mechanical Engineering": [
+        {
+            "q": "[MECH-MODE] 1: IC Engine full form?",
+            "options": [
+                "Internal Combustion",
+                "Internal Cooling",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MECH-MODE] 2: Friction produces?",
+            "options": [
+                "Cold",
+                "Heat",
+                "Light",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MECH-MODE] 3: Unit of Torque?",
+            "options": [
+                "N",
+                "N-m",
+                "J",
+                "Pascal"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MECH-MODE] 4: Gear ratio affects?",
+            "options": [
+                "Color",
+                "Speed/Torque",
+                "Fuel",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MECH-MODE] 5: CNC is computer ____",
+            "options": [
+                "Numerical Control",
+                "Node Center",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MECH-MODE] 6: Piston moves in?",
+            "options": [
+                "Cylinder",
+                "Square",
+                "Pipe",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MECH-MODE] 7: Lubricant is for?",
+            "options": [
+                "Inc friction",
+                "Red friction",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MECH-MODE] 8: Steel has?",
+            "options": [
+                "Iron",
+                "Carbon",
+                "Both",
+                "None"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "[MECH-MODE] 9: Thermodynamics deals with?",
+            "options": [
+                "Heat/Work",
+                "Light",
+                "Plants",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MECH-MODE] 10: Gauge measures?",
+            "options": [
+                "Length",
+                "Pressure",
+                "Time",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Civil Engineering": [
+        {
+            "q": "[CIVIL-MODE] 1: Concrete is mixture of?",
+            "options": [
+                "Cement+Sand+Stone",
+                "Wood",
+                "Metal",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CIVIL-MODE] 2: Foundation supports?",
+            "options": [
+                "Roof",
+                "Structure",
+                "Windows",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 3: Surveyor measures?",
+            "options": [
+                "Weight",
+                "Land",
+                "Height only",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 4: RCC means Reinforced ____",
+            "options": [
+                "Core Civil",
+                "Cement Concrete",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 5: Bridge span is?",
+            "options": [
+                "Width",
+                "Length between supports",
+                "Height",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 6: Dam stores?",
+            "options": [
+                "Money",
+                "Water",
+                "Sand",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 7: Blueprint is a?",
+            "options": [
+                "Blue paint",
+                "Technical drawing",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 8: Cement sets with?",
+            "options": [
+                "Air",
+                "Water",
+                "Light",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 9: Brick is made of?",
+            "options": [
+                "Metal",
+                "Clay",
+                "Plastic",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CIVIL-MODE] 10: Skyscraper is a ____ building.",
+            "options": [
+                "Small",
+                "Very tall",
+                "Green",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Chemical Engineering": [
+        {
+            "q": "[CHEM-MODE] 1: H2O is?",
+            "options": [
+                "Air",
+                "Water",
+                "Acid",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 2: pH 1 is?",
+            "options": [
+                "Strongly Acidic",
+                "Base",
+                "Neutral",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CHEM-MODE] 3: Catalyst speeds up?",
+            "options": [
+                "Car",
+                "Reaction",
+                "Cooling",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 4: Distillation separates liquids by?",
+            "options": [
+                "Color",
+                "Boiling pt",
+                "Weight",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 5: CO2 is?",
+            "options": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Hydrogen",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 6: Polymer example?",
+            "options": [
+                "Stone",
+                "Plastic",
+                "Lead",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 7: Filtration removes?",
+            "options": [
+                "Gas",
+                "Solids from liquid",
+                "Heat",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 8: Periodic Table lists?",
+            "options": [
+                "Words",
+                "Elements",
+                "Numbers",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 9: Acid + Base = ?",
+            "options": [
+                "Fire",
+                "Salt + Water",
+                "Poison",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[CHEM-MODE] 10: Refinery processes?",
+            "options": [
+                "Water",
+                "Oil",
+                "Sand",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "MBBS": [
+        {
+            "q": "[MBBS-MODE] 1: Human heart has how many chambers?",
+            "options": [
+                "2",
+                "4",
+                "3",
+                "1"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 2: Blood color?",
+            "options": [
+                "Red",
+                "Blue",
+                "Green",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MBBS-MODE] 3: Brain control center for?",
+            "options": [
+                "Body",
+                "House",
+                "Computer",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[MBBS-MODE] 4: Muscle for breathing?",
+            "options": [
+                "Bicep",
+                "Diaphragm",
+                "Heart",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 5: Oxygen carrier?",
+            "options": [
+                "Plasma",
+                "Hemoglobin",
+                "Water",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 6: Skeleton provides?",
+            "options": [
+                "Food",
+                "Support/Protection",
+                "Color",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 7: Master gland?",
+            "options": [
+                "Thyroid",
+                "Pituitary",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 8: Kidney filters?",
+            "options": [
+                "Air",
+                "Blood",
+                "Food",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 9: Pulse is felt in?",
+            "options": [
+                "Bone",
+                "Artery",
+                "Nail",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[MBBS-MODE] 10: Medicine doctor is?",
+            "options": [
+                "MBBS",
+                "Engineer",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "BDS": [
+        {
+            "q": "[BDS-MODE] 1: Teething happens in?",
+            "options": [
+                "Adults only",
+                "Infants",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 2: Tooth decay cause?",
+            "options": [
+                "Sugar/Bacteria",
+                "Milk",
+                "Water",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BDS-MODE] 3: Gums are?",
+            "options": [
+                "Teeth",
+                "Soft tissue around teeth",
+                "Bones",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 4: Molar is for?",
+            "options": [
+                "Cutting",
+                "Grinding",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 5: Dentist mirror is?",
+            "options": [
+                "Small",
+                "Large",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BDS-MODE] 6: Filling treats?",
+            "options": [
+                "Pain",
+                "Cavity",
+                "Broken leg",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 7: Extraction means?",
+            "options": [
+                "Adding",
+                "Removing tooth",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 8: Dental xray shows?",
+            "options": [
+                "Bones/Hidden decay",
+                "Skin",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BDS-MODE] 9: Brushing frequency?",
+            "options": [
+                "Never",
+                "Twice a day",
+                "Once a week",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BDS-MODE] 10: Fluoride helps?",
+            "options": [
+                "Color",
+                "Strengthen enamel",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        }
+    ],
+    "BPT": [
+        {
+            "q": "[BPT-MODE] 1: Rehab through exercise?",
+            "options": [
+                "Surgery",
+                "Physiotherapy",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BPT-MODE] 2: Muscle pain help?",
+            "options": [
+                "Massage/Heat",
+                "Reading",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 3: Joints allow?",
+            "options": [
+                "Movement",
+                "Sound",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 4: Range of motion?",
+            "options": [
+                "Degrees",
+                "KG",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 5: Posture is?",
+            "options": [
+                "Body alignment",
+                "Clothes",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 6: BPT stands for?",
+            "options": [
+                "Bachelor of Physiotherapy",
+                "Basic Physical Train",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 7: Stretching increases?",
+            "options": [
+                "Weight",
+                "Flexibility",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BPT-MODE] 8: Spine health needs?",
+            "options": [
+                "Slumping",
+                "Straight back",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[BPT-MODE] 9: Physiotherapist is?",
+            "options": [
+                "Expert in movement",
+                "Chef",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[BPT-MODE] 10: Fracture needs?",
+            "options": [
+                "Dancing",
+                "Rest/Immobilization",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        }
+    ],
+    "B.Sc Nursing": [
+        {
+            "q": "[NURS-MODE] 1: Vital signs check?",
+            "options": [
+                "Pulse/BP",
+                "Shoes",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 2: Nurse assists?",
+            "options": [
+                "Patient/Doctor",
+                "Cars",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 3: Hygiene is?",
+            "options": [
+                "Cleanliness",
+                "Noise",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 4: IV means?",
+            "options": [
+                "Intravenous",
+                "Internal View",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 5: First Aid is?",
+            "options": [
+                "Emergency help",
+                "Building",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 6: Ward is a?",
+            "options": [
+                "Room for patients",
+                "Tool",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 7: Bandage is for?",
+            "options": [
+                "Covering wound",
+                "Eating",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 8: Patient record is?",
+            "options": [
+                "History",
+                "Music",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 9: Ethics means?",
+            "options": [
+                "Rights/Wrong conduct",
+                "Math",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[NURS-MODE] 10: Role of Compassion?",
+            "options": [
+                "Critical",
+                "None",
+                "All",
+                "Bad"
+            ],
+            "answer": 0
+        }
+    ],
+    "Pharmacy": [
+        {
+            "q": "[PHARM-MODE] 1: Drugs sold at?",
+            "options": [
+                "Market",
+                "Pharmacy",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[PHARM-MODE] 2: Prescription is from?",
+            "options": [
+                "Doctor",
+                "Friend",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 3: Dosage is?",
+            "options": [
+                "Amount",
+                "Color",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 4: Expiry date means?",
+            "options": [
+                "Don't use after",
+                "Start using",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 5: Capsules are?",
+            "options": [
+                "Medicine form",
+                "Shoes",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 6: Syrup is?",
+            "options": [
+                "Liquid med",
+                "Gas",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 7: Tablets are?",
+            "options": [
+                "Solid med",
+                "Computers only",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 8: Side effect is?",
+            "options": [
+                "Unintended reaction",
+                "Good luck",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 9: Lab tests confirm?",
+            "options": [
+                "Diagnosis",
+                "Wealth",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[PHARM-MODE] 10: Pharmacist ensures?",
+            "options": [
+                "Correct med/dose",
+                "Sales only",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "BA LLB": [
+        {
+            "q": "[LAW-MODE] 1: Constitution is?",
+            "options": [
+                "Supreme law",
+                "Story book",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 2: Court is for?",
+            "options": [
+                "Justice/Law",
+                "Games",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 3: Evidence is?",
+            "options": [
+                "Proof",
+                "Opinion",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 4: Rights are?",
+            "options": [
+                "Legal Entitlements",
+                "Lefts",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 5: Duty means?",
+            "options": [
+                "Obligation",
+                "Salary",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 6: Advocate is a?",
+            "options": [
+                "Lawyer",
+                "Singer",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 7: Crime is?",
+            "options": [
+                "Illegal act",
+                "Good act",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 8: Punishment follows?",
+            "options": [
+                "Conviction",
+                "Innocence",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 9: Supreme Court is?",
+            "options": [
+                "Highest court",
+                "Lowest",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 10: Law helps in?",
+            "options": [
+                "Order in society",
+                "Chaos",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "LLB": [
+        {
+            "q": "[LAW-MODE] 1: Constitution is?",
+            "options": [
+                "Supreme law",
+                "Story book",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 2: Court is for?",
+            "options": [
+                "Justice/Law",
+                "Games",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 3: Evidence is?",
+            "options": [
+                "Proof",
+                "Opinion",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 4: Rights are?",
+            "options": [
+                "Legal Entitlements",
+                "Lefts",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 5: Duty means?",
+            "options": [
+                "Obligation",
+                "Salary",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 6: Advocate is a?",
+            "options": [
+                "Lawyer",
+                "Singer",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 7: Crime is?",
+            "options": [
+                "Illegal act",
+                "Good act",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 8: Punishment follows?",
+            "options": [
+                "Conviction",
+                "Innocence",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 9: Supreme Court is?",
+            "options": [
+                "Highest court",
+                "Lowest",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LAW-MODE] 10: Law helps in?",
+            "options": [
+                "Order in society",
+                "Chaos",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "LLM": [
+        {
+            "q": "[LLM-MODE] 1: LLM is a ____ degree.",
+            "options": [
+                "Master",
+                "Bachelor",
+                "Diploma",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 2: Legal research is?",
+            "options": [
+                "Vital",
+                "None",
+                "All",
+                "Optional"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 3: Specialization in?",
+            "options": [
+                "Law fields",
+                "Math",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 4: Thesis is?",
+            "options": [
+                "Extended research paper",
+                "Book",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 5: Jurist is?",
+            "options": [
+                "Legal expert",
+                "Chef",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 6: Intellectual Property?",
+            "options": [
+                "Patents/Copyrights",
+                "Houses",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 7: International Law is?",
+            "options": [
+                "Between nations",
+                "City law",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 8: Corporate Law?",
+            "options": [
+                "Business law",
+                "Trees",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 9: Human Rights?",
+            "options": [
+                "Fundamental",
+                "None",
+                "All",
+                "Optional"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LLM-MODE] 10: Legal Theory is?",
+            "options": [
+                "Philosophy",
+                "Cooking",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Communication Skill": [
+        {
+            "q": "[COMM-SET] 1: Non-verbal includes?",
+            "options": [
+                "Body language",
+                "Talking",
+                "Reading",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 2: Listening is?",
+            "options": [
+                "Active skill",
+                "Passive",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 3: Clarity avoids?",
+            "options": [
+                "Confusion",
+                "Truth",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 4: Eye contact builds?",
+            "options": [
+                "Trust",
+                "Fear",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 5: Feedback is?",
+            "options": [
+                "Vital for loops",
+                "Bad",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 6: Public speaking tip?",
+            "options": [
+                "Practice",
+                "Hide",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 7: Empathy is?",
+            "options": [
+                "Understanding others",
+                "Rudeness",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 8: Tone of voice?",
+            "options": [
+                "Affects meaning",
+                "Doesn't matter",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 9: Written comm needs?",
+            "options": [
+                "Grammar/Clarity",
+                "Slang",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[COMM-SET] 10: Barrier example?",
+            "options": [
+                "Noise",
+                "Silence",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Leadership Skill": [
+        {
+            "q": "[LEAD-SET] 1: Leader inspires?",
+            "options": [
+                "Team",
+                "Fear",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 2: Vision is?",
+            "options": [
+                "Future goal",
+                "Blindness",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 3: Decision making is?",
+            "options": [
+                "Critical",
+                "None",
+                "All",
+                "Lucky"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 4: Integrity is?",
+            "options": [
+                "Honesty",
+                "Wealth",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 5: Delegation is?",
+            "options": [
+                "Sharing tasks",
+                "Micromanaging",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 6: Leader's role?",
+            "options": [
+                "Guidance",
+                "Sleeping",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 7: Motivation is?",
+            "options": [
+                "Encouragement",
+                "Firing",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 8: Teamwork needs?",
+            "options": [
+                "Collaboration",
+                "Fights",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 9: Influence is?",
+            "options": [
+                "Positive impact",
+                "Money",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[LEAD-SET] 10: Strategy is?",
+            "options": [
+                "Plan of action",
+                "Guess",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Critical Thinking": [
+        {
+            "q": "[CRITICAL] 1: Analysis means?",
+            "options": [
+                "Breaking down",
+                "Building up",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 2: Logic is?",
+            "options": [
+                "Reasoning",
+                "Emotion",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 3: Questioning is?",
+            "options": [
+                "Vital",
+                "Annoying",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 4: Evidence based?",
+            "options": [
+                "Yes",
+                "No",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 5: Bias is?",
+            "options": [
+                "To be avoided",
+                "Fact",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 6: Objective vs Subjective?",
+            "options": [
+                "Facts vs Opi",
+                "Opi vs Facts",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 7: Problem solving is?",
+            "options": [
+                "Process",
+                "End",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 8: Reflection is?",
+            "options": [
+                "Thinking back",
+                "Mirror",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 9: Innovation needs?",
+            "options": [
+                "Thinking differently",
+                "Copying",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[CRITICAL] 10: Synthesis is?",
+            "options": [
+                "Combining ideas",
+                "Splitting",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Digital Skill": [
+        {
+            "q": "[DIGI-SET] 1: Coding is?",
+            "options": [
+                "Giving instructions",
+                "Typing fast",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 2: Internet is?",
+            "options": [
+                "Global network",
+                "A city",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 3: App is a?",
+            "options": [
+                "Software program",
+                "Fruit",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 4: Data is?",
+            "options": [
+                "Information",
+                "Sand",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 5: Privacy is?",
+            "options": [
+                "Essential",
+                "Open",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 6: Hardware is?",
+            "options": [
+                "Physical part",
+                "Code",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 7: Software is?",
+            "options": [
+                "Programs",
+                "Monitor",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 8: Storage is in?",
+            "options": [
+                "GB/TB",
+                "Meter",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 9: Upload is?",
+            "options": [
+                "Sending data",
+                "Receiving",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIGI-SET] 10: Download is?",
+            "options": [
+                "Receiving data",
+                "Sending",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Diploma in Mechanical Engineering": [
+        {
+            "q": "[DIP-MECH] 1: Lathe is for?",
+            "options": [
+                "Machining",
+                "Cooking",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 2: Welding is?",
+            "options": [
+                "Joining",
+                "Splitting",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 3: Engine parts?",
+            "options": [
+                "Piston/Valves",
+                "Keys",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 4: Force unit?",
+            "options": [
+                "Newton",
+                "Liter",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 5: Gauge is for?",
+            "options": [
+                "Measure",
+                "Color",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 6: Oil is used to?",
+            "options": [
+                "Lubricate",
+                "Burn",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 7: Gear increases?",
+            "options": [
+                "Torque",
+                "Air",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 8: Steel has Carbon?",
+            "options": [
+                "Yes",
+                "No",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 9: Draftsman draws?",
+            "options": [
+                "Technical plans",
+                "Art",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-MECH] 10: Safety first means?",
+            "options": [
+                "Vital",
+                "None",
+                "All",
+                "Bad"
+            ],
+            "answer": 0
+        }
+    ],
+    "Diploma in Civil Engineering": [
+        {
+            "q": "[DIP-CIVIL] 1: Bricks are for?",
+            "options": [
+                "Walls",
+                "Eating",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 2: Cement + Water?",
+            "options": [
+                "Paste",
+                "Gas",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 3: Leveling check?",
+            "options": [
+                "Elevation",
+                "Weight",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 4: Roof has?",
+            "options": [
+                "Tiles",
+                "None",
+                "All",
+                "Books"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 5: Road Camber is for?",
+            "options": [
+                "Drainage",
+                "Beauty",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 6: Concrete strength?",
+            "options": [
+                "High",
+                "Low",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 7: Drawing tools?",
+            "options": [
+                "T-Square",
+                "Fork",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 8: Soil test is?",
+            "options": [
+                "Important",
+                "None",
+                "All",
+                "Optional"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 9: Map is for?",
+            "options": [
+                "Guide",
+                "None",
+                "All",
+                "Music"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CIVIL] 10: Building starts with?",
+            "options": [
+                "Foundation",
+                "Roof",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Diploma in Electrical Engineering": [
+        {
+            "q": "[DIP-ELEC] 1: Unit of Current?",
+            "options": [
+                "Ampere",
+                "Volt",
+                "Ohm",
+                "Watt"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-ELEC] 2: Part of a DC motor?",
+            "options": [
+                "Piston",
+                "Armature",
+                "Valve",
+                "Draft"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-ELEC] 3: Transformer core is made of?",
+            "options": [
+                "Wood",
+                "Laminated Steel",
+                "Plastic",
+                "Copper"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-ELEC] 4: Which is an insulator?",
+            "options": [
+                "Copper",
+                "Rubber",
+                "Aluminum",
+                "Iron"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-ELEC] 5: Multi-meter is for?",
+            "options": [
+                "V, I, R",
+                "Weight",
+                "Speed",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-ELEC] 6: OHM's Law formula?",
+            "options": [
+                "V=IR",
+                "V=I+R",
+                "V=I/R",
+                "I=VR"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-ELEC] 7: AC stands for?",
+            "options": [
+                "Active Current",
+                "Alternating Current",
+                "Air Cool",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-ELEC] 8: Fuse protects from?",
+            "options": [
+                "Overload",
+                "Underload",
+                "Sound",
+                "Heat"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-ELEC] 9: Battery stores energy in ____ form.",
+            "options": [
+                "Heat",
+                "Chemical",
+                "Light",
+                "Mechanical"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-ELEC] 10: Earth wire color is usually?",
+            "options": [
+                "Red",
+                "Blue",
+                "Green",
+                "Black"
+            ],
+            "answer": 2
+        }
+    ],
+    "Diploma in Computer Science": [
+        {
+            "q": "[DIP-CS] 1: Brain of Computer?",
+            "options": [
+                "RAM",
+                "CPU",
+                "HDD",
+                "Monitor"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CS] 2: 1 Byte = how many bits?",
+            "options": [
+                "4",
+                "8",
+                "16",
+                "32"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CS] 3: Operating System example?",
+            "options": [
+                "Windows",
+                "C++",
+                "Java",
+                "Python"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CS] 4: RAM type?",
+            "options": [
+                "Permanent",
+                "Volatile",
+                "Optical",
+                "Magnetic"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CS] 5: HTTP full form?",
+            "options": [
+                "HyperText Transfer Protocol",
+                "High Transfer",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CS] 6: Which is an Input device?",
+            "options": [
+                "Monitor",
+                "Printer",
+                "Keyboard",
+                "Speaker"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "[DIP-CS] 7: LAN means?",
+            "options": [
+                "Local Area Network",
+                "Large Area",
+                "Land Area",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CS] 8: Binary system uses?",
+            "options": [
+                "0 and 1",
+                "0 to 9",
+                "A to Z",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CS] 9: Anti-virus is to prevent?",
+            "options": [
+                "Disease",
+                "Malware",
+                "Dust",
+                "Noise"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CS] 10: WWW stands for?",
+            "options": [
+                "World Wide Web",
+                "Web World Wide",
+                "Wait Win Work",
+                "None"
+            ],
+            "answer": 0
+        }
+    ],
+    "Diploma in Chemical Engineering": [
+        {
+            "q": "[DIP-CHEM] 1: Water formula?",
+            "options": [
+                "CO2",
+                "H2O",
+                "O2",
+                "H2"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CHEM] 2: Distillation is based on?",
+            "options": [
+                "Color",
+                "Boiling Point",
+                "Weight",
+                "Taste"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CHEM] 3: pH of pure water?",
+            "options": [
+                "1",
+                "14",
+                "7",
+                "0"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "[DIP-CHEM] 4: Filtration is for?",
+            "options": [
+                "Solid-Liquid sep",
+                "Gas-Gas",
+                "Color",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CHEM] 5: Periodic Table list icons for?",
+            "options": [
+                "Apps",
+                "Elements",
+                "Numbers",
+                "Chemicals"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CHEM] 6: CO2 is ____ at room temp.",
+            "options": [
+                "Gas",
+                "Liquid",
+                "Solid",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CHEM] 7: Polymer example?",
+            "options": [
+                "Iron",
+                "Plastic",
+                "Lead",
+                "Gold"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CHEM] 8: Catalyst ____ reactions.",
+            "options": [
+                "Slows",
+                "Speeds",
+                "Stops",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "[DIP-CHEM] 9: Acid turns litmus?",
+            "options": [
+                "Red",
+                "Blue",
+                "Green",
+                "White"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "[DIP-CHEM] 10: Refinery process uses?",
+            "options": [
+                "Crude Oil",
+                "Sand",
+                "Wood",
+                "None"
+            ],
+            "answer": 0
+        }
+    ]
+}

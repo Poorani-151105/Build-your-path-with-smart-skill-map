@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSkillMap | MASTER</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Smart Skill Map</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assessment.html">Assessments</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+        <div class="auth-btns" style="display: flex; gap: 1rem;">
+            <a href="login.html" class="btn btn-outline" style="padding: 0.6rem 1.2rem;">Login</a>
+            <a href="signup.html" class="btn btn-primary" style="padding: 0.6rem 1.2rem;">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 85vh; text-align: center; padding: 0 5%;">
+        <div class="animate-fade" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border); padding: 4rem; border-radius: 40px; backdrop-filter: blur(20px); max-width: 900px; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
+            <div style="display: inline-block; background: rgba(34, 211, 238, 0.1); color: var(--accent-color); padding: 8px 20px; border-radius: 30px; font-size: 0.8rem; font-weight: 800; letter-spacing: 2px; margin-bottom: 2rem;">NEXT-GEN CAREER INTELLIGENCE</div>
+            <h1 style="font-size: clamp(3rem, 8vw, 5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; letter-spacing: -2px;">
+                Build Your Path with <br>
+                <span style="background: var(--primary-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Smart Skill Map</span>
+            </h1>
+            <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 3rem; line-height: 1.6;">
+                An AI-powered guidance platform that maps your unique cognitive and technical vector to the global career landscape.
+            </p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <a href="signup.html" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem; border-radius: 15px;">Get Started Free</a>
+                <a href="#features" class="btn btn-outline" style="padding: 1.2rem 3rem; font-size: 1.1rem; border-radius: 15px;">How it Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Prop Section -->
+    <section id="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 8rem 10%;">
+        <div class="glass-card animate-fade" style="padding: 3rem; border-radius: 30px;">
+            <div style="font-size: 3rem; margin-bottom: 1.5rem;">🎯</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-color);">Adaptive Testing</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">Our engine adjusts difficulty in real-time based on your performance, ensuring a high-accuracy skill profile.</p>
+        </div>
+        <div class="glass-card animate-fade" style="padding: 3rem; border-radius: 30px; animation-delay: 0.1s;">
+            <div style="font-size: 3rem; margin-bottom: 1.5rem;">🔮</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-color);">Career Roadmap</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">Dynamically generated learning paths that evolve as you complete modules and gain new competencies.</p>
+        </div>
+        <div class="glass-card animate-fade" style="padding: 3rem; border-radius: 30px; animation-delay: 0.2s;">
+            <div style="font-size: 3rem; margin-bottom: 1.5rem;">📊</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-color);">Skill Data</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">Visualized through interactive Radar and Timeline maps, giving you a 360-degree view of your growth.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 6rem 0; border-top: 1px solid var(--glass-border); opacity: 0.5;">
+        <p>&copy; 2026 Build Your Path with Smart Skill Map. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

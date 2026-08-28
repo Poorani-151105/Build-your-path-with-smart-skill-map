@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Build Your Path with Smart Skill Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background: #0a0a0a;">
+    <nav>
+        <div class="logo">Smart Skill Map</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assessment.html">Assessments</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="profile.html" style="color: var(--accent-color);">Profile</a></li>
+        </ul>
+        <button onclick="logout()" class="btn btn-outline" style="padding: 0.5rem 1rem;">Logout</button>
+    </nav>
+
+    <main style="padding: 40px 5%; max-width: 1200px; margin: 0 auto;">
+        <!-- Header -->
+        <div class="glass-card animate-fade" style="display: flex; align-items: center; gap: 3rem; padding: 4rem; border-radius: 40px; margin-bottom: 3rem;">
+            <div style="width: 150px; height: 150px; border-radius: 50%; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; font-size: 4rem; font-weight: 800;" id="userInitial">U</div>
+            <div>
+                <h1 id="profUsername" style="font-size: 3rem; margin-bottom: 0.5rem; letter-spacing: -2px;">Username</h1>
+                <p id="profEmail" style="color: var(--text-secondary); font-size: 1.2rem;">user@example.com</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <span style="background: rgba(34, 211, 238, 0.1); color: var(--accent-color); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">PRO ACCOUNT</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;" id="joinDate">Joined April 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
+            <!-- Left: History -->
+            <div class="glass-card animate-fade" style="animation-delay: 0.1s;">
+                <h3 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">📜 Result History</h3>
+                <div id="historyTable" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <!-- Injected -->
+                </div>
+            </div>
+
+            <!-- Right: Recommendations & Active Tracks -->
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <!-- Active Tracks Widget -->
+                <div class="glass-card animate-fade" style="border: 1px solid var(--accent-color);">
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">📚 My Active Tracks</h3>
+                    <div id="activeTracksWidget" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <p style="color: var(--text-secondary);">Loading tracks...</p>
+                    </div>
+                </div>
+
+                <div class="glass-card animate-fade" style="animation-delay: 0.2s; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(34, 211, 238, 0.1)); border: 1px solid var(--accent-color);">
+                    <h3 style="margin-bottom: 1.5rem;">🎯 Career Goal</h3>
+                    <div id="topMatch">
+                        <p style="color: var(--text-secondary);">Calculating your best fit...</p>
+                    </div>
+                </div>
+
+                <div class="glass-card animate-fade" style="animation-delay: 0.3s;">
+                    <h3 style="margin-bottom: 1.5rem;">📈 Skill Map</h3>
+                    <canvas id="profileRadar"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) { window.location.href = 'login.html'; return; }
+
+            try {
+                const res = await fetch(`/api/profile/${user.id}`, {
+                    headers: { 'Authorization': `Bearer ${user.token}` }
+                });
+                const data = await res.json();
+                renderProfile(data);
+            } catch (err) { console.error(err); }
+        });
+
+        async function renderProfile(data) {
+            document.getElementById('profUsername').innerText = data.user.username;
+            document.getElementById('profEmail').innerText = data.user.email;
+            document.getElementById('userInitial').innerText = data.user.username[0].toUpperCase();
+            document.getElementById('joinDate').innerText = "Member since " + new Date(data.user.createdAt).toLocaleDateString();
+
+            // Render History
+            const historyContainer = document.getElementById('historyTable');
+            if (data.history.length === 0) {
+                historyContainer.innerHTML = '<p style="color: var(--text-secondary); text-align: center; padding: 2rem;">No assessments completed yet.</p>';
+            } else {
+                data.history.forEach(h => {
+                    const row = `
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 15px; border: 1px solid rgba(255,255,255,0.05);">
+                            <div>
+                                <div style="font-weight: 700; font-size: 1.1rem;">${h.assessment.title}</div>
+                                <div style="font-size: 0.8rem; color: var(--text-secondary);">${new Date(h.completedAt).toLocaleString()}</div>
+                            </div>
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-color);">${h.score}%</div>
+                        </div>
+                    `;
+                    historyContainer.innerHTML += row;
+                });
+            }
+
+            // Render Recommendation
+            const topMatch = document.getElementById('topMatch');
+            if (data.recommendations.length > 0) {
+                const best = data.recommendations[0];
+                topMatch.innerHTML = `
+                    <h2 style="color: var(--text-primary); margin-bottom: 0.5rem;">${best.career.title}</h2>
+                    <p style="color: var(--accent-color); font-weight: 800; font-size: 1.2rem; margin-bottom: 1rem;">${best.matchPercentage}% Match</p>
+                    <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.9rem; margin-bottom: 1.5rem;">Based on your domain performance, we recommend specializing in <b>${best.career.subDomain || 'Core Systems'}</b>.</p>
+                    <a href="roadmap.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">View Roadmap</a>
+                `;
+            }
+
+            // Render Active Tracks
+            const activeTracksContainer = document.getElementById('activeTracksWidget');
+            try {
+                const allProgressStr = data.user.progressJson;
+                const progressObj = allProgressStr ? JSON.parse(allProgressStr) : {};
+                const keys = Object.keys(progressObj).filter(k => k.startsWith('course_'));
+                
+                if (keys.length === 0) {
+                    activeTracksContainer.innerHTML = '<p style="color: var(--text-secondary); font-size: 0.9rem;">You have not started any daily learning tracks yet.</p>';
+                } else {
+                    activeTracksContainer.innerHTML = '';
+                    
+                    // Cross check against recommendations array which holds all careers
+                    data.recommendations.forEach(rec => {
+                        const courseKey = 'course_' + rec.career.id;
+                        if (keys.includes(courseKey)) {
+                            const progMap = progressObj[courseKey];
+                            const completed = Object.values(progMap).filter(v => v === true).length;
+                            const percent = Math.round((completed / 7) * 100);
+                            
+                            activeTracksContainer.innerHTML += `
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                                    <div>
+                                        <h4 style="margin-bottom: 0.2rem; font-size: 0.95rem;">${rec.career.title}</h4>
+                                        <div style="font-size: 0.75rem; color: var(--accent-color);">${percent}% Completed</div>
+                                    </div>
+                                    <button onclick="resumeTrack(${rec.career.id})" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Resume</button>
+                                </div>
+                            `;
+                        }
+                    });
+                }
+            } catch(e) {
+                activeTracksContainer.innerHTML = '<p style="color: red;">Failed to load active tracks.</p>';
+            }
+
+            // Skill Radar
+            const labels = data.skills.map(s => s.skill.name);
+            const scores = data.skills.map(s => s.score);
+            new Chart(document.getElementById('profileRadar'), {
+                type: 'radar',
+                data: {
+                    labels: labels.length ? labels : ["Empty"],
+                    datasets: [{
+                        data: scores.length ? scores : [0],
+                        backgroundColor: 'rgba(34, 211, 238, 0.2)',
+                        borderColor: 'rgb(34, 211, 238)',
+                        pointBackgroundColor: 'rgb(34, 211, 238)'
+                    }]
+                },
+                options: {
+                    scales: { r: { suggestedMin: 0, suggestedMax: 100, ticks: { display: false }, grid: { color: 'rgba(255,255,255,0.05)' } } },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        async function resumeTrack(courseId) {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) return;
+
+            try {
+                const response = await fetch(`/api/profile/${user.id}/enroll/${courseId}`, {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${user.token}` }
+                });
+                const result = await response.json();
+
+                
+                if (result.status === 'success') {
+                    window.location.href = 'daily-plan.html';
+                }
+            } catch (err) {
+                console.error("Resume error:", err);
+            }
+        }
+    </script>
+</body>
+</html>

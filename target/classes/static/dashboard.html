@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Build Your Path with Smart Skill Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Smart Skill Map</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html" style="color: var(--accent-color);">Dashboard</a></li>
+            <li><a href="assessment.html">Assessments</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div id="userProfile" style="display: flex; align-items: center; gap: 1rem;">
+            <span id="userNameDisplay" style="color: var(--text-secondary);"></span>
+            <button onclick="logout()" class="btn btn-outline" style="padding: 0.5rem 1rem;">Logout</button>
+        </div>
+    </nav>
+
+    <main style="padding: 40px 5%;">
+        <div style="margin-bottom: 3rem;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Welcome back, <span id="welcomeName" style="color: var(--accent-color);">User</span>!</h1>
+            <p style="color: var(--text-secondary);">Here is a summary of your current skill profile and growth.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Specialty Mastery Card -->
+            <div id="masteryCard" class="glass-card animate-fade" style="display: none; border: 1px solid var(--accent-color);">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+                    <span style="color: var(--accent-color); font-weight: 800; font-size: 0.75rem; letter-spacing: 1px;">ACTIVE SPECIALIZATION</span>
+                    <span id="masteryPercent" style="color: var(--text-primary); font-weight: 800;">0%</span>
+                </div>
+                <h2 id="activePathTitle" style="font-size: 1.8rem; margin-bottom: 1rem;">Course Name</h2>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; margin-bottom: 1.5rem;">
+                    <div id="masteryProgress" style="width: 0%; height: 100%; background: var(--primary-gradient); transition: width 0.5s ease;"></div>
+                </div>
+                <a href="daily-plan.html" class="btn btn-outline" style="width: 100%; border-color: var(--accent-color); color: var(--accent-color); font-size: 0.8rem;">Continue Learning Track</a>
+            </div>
+
+            <!-- Skill Radar Chart -->
+            <div class="glass-card animate-fade">
+                <h3 style="margin-bottom: 1.5rem;">Skill Radar (Holistic)</h3>
+                <div style="height: 350px; display: flex; justify-content: center;">
+                    <canvas id="skillRadar"></canvas>
+                </div>
+            </div>
+
+            <!-- Progress Timeline Chart -->
+            <div class="glass-card animate-fade" style="animation-delay: 0.1s;">
+                <h3 style="margin-bottom: 1.5rem;">Growth Timeline</h3>
+                <div style="height: 350px;">
+                    <canvas id="progressTimeline"></canvas>
+                </div>
+            </div>
+
+            <!-- Stats & Quick Actions -->
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="glass-card animate-fade" style="animation-delay: 0.2s;">
+                    <h4 style="color: var(--text-secondary); margin-bottom: 0.5rem;">Mean Skill Score</h4>
+                    <p style="font-size: 2.5rem; font-weight: 800;" id="meanScore">0%</p>
+                </div>
+                <a href="assessment.html" class="btn btn-primary animate-fade" style="animation-delay: 0.3s; width: 100%;">Explore Assessment Hub</a>
+            </div>
+        </div>
+
+        <!-- Recent Activity Table -->
+        <div class="glass-card animate-fade" style="margin-top: 3rem; animation-delay: 0.4s;">
+            <h3 style="margin-bottom: 1.5rem;">Recent Performance</h3>
+            <table style="width: 100%; border-collapse: collapse; color: var(--text-secondary);">
+                <thead>
+                    <tr style="text-align: left; border-bottom: 1px solid var(--glass-border);">
+                        <th style="padding: 1rem;">Category</th>
+                        <th style="padding: 1rem;">Skill</th>
+                        <th style="padding: 1rem;">Score</th>
+                        <th style="padding: 1rem;">Date</th>
+                    </tr>
+                </thead>
+                <tbody id="skillTableBody">
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            try {
+                // Fetch FULL persistent profile including enrollment data
+                const response = await fetch(`/api/profile/${user.id}`, {
+                    headers: {
+                        'Authorization': `Bearer ${user.token}`
+                    }
+                });
+                const profileData = await response.json();
+                
+                document.getElementById('welcomeName').innerText = profileData.user.username;
+                document.getElementById('userNameDisplay').innerText = "@" + profileData.user.username;
+
+                renderDashboard(profileData.skills, profileData.history);
+                renderMasteryWidget(profileData.enrolledPath, profileData.user.progressJson);
+            } catch (err) {
+                console.error("Dashboard profile sync error:", err);
+            }
+        });
+
+        function renderMasteryWidget(path, progressStr) {
+            if (!path) return;
+            
+            document.getElementById('masteryCard').style.display = 'block';
+            document.getElementById('activePathTitle').innerText = path.title;
+            
+            const allProgress = progressStr ? JSON.parse(progressStr) : {};
+            const progress = allProgress["course_" + path.id] || {};
+            
+            const completed = Object.values(progress).filter(v => v === true).length;
+            const percent = Math.round((completed / 7) * 100);
+            
+            document.getElementById('masteryProgress').style.width = percent + '%';
+            document.getElementById('masteryPercent').innerText = percent + '%';
+        }
+
+        function renderDashboard(userSkills, history) {
+            // Radar Chart logic
+            const labels = userSkills.map(us => us.skill.name);
+            const scores = userSkills.map(us => us.score);
+            
+            if (labels.length === 0) {
+                 labels.push("Java", "Logic", "UX Design", "Leadership", "SQL");
+                 scores.push(0, 0, 0, 0, 0);
+            }
+
+            new Chart(document.getElementById('skillRadar').getContext('2d'), {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Current Proficiency',
+                        data: scores,
+                        backgroundColor: 'rgba(99, 102, 241, 0.2)',
+                        borderColor: 'rgb(99, 102, 241)',
+                        pointBackgroundColor: 'rgb(34, 211, 238)'
+                    }]
+                },
+                options: {
+                    scales: { r: { suggestedMin: 0, suggestedMax: 100, ticks: { display: false }, grid: { color: 'rgba(255,255,255,0.05)' } } },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // Timeline Chart logic
+            const timelineLabels = history.map(h => new Date(h.completedAt).toLocaleDateString());
+            const timelineScores = history.map(h => h.score);
+
+            new Chart(document.getElementById('progressTimeline').getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: timelineLabels.length ? timelineLabels : ["Start"],
+                    datasets: [{
+                        label: 'Assessment Performance',
+                        data: timelineScores.length ? timelineScores : [0],
+                        borderColor: 'rgb(34, 211, 238)',
+                        tension: 0.4,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { beginAtZero: true, max: 100, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            const tableBody = document.getElementById('skillTableBody');
+            tableBody.innerHTML = ''; // Ensure clean slate
+            
+            // Loop through the chronological test history to show ALL tests taken
+            history.forEach(h => {
+                const row = `
+                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                        <td style="padding: 1rem; color: var(--text-primary); font-weight: 600;">${h.assessment.category}</td>
+                        <td style="padding: 1rem;">${h.assessment.title}</td>
+                        <td style="padding: 1rem;"><span style="color: var(--accent-color);">${h.score}%</span></td>
+                        <td style="padding: 1rem;">${new Date(h.completedAt).toLocaleDateString()}</td>
+                    </tr>
+                `;
+                tableBody.innerHTML += row;
+            });
+            
+            let total = 0;
+            userSkills.forEach(us => { total += us.score; });
+            
+            if (userSkills.length > 0) {
+                document.getElementById('meanScore').innerText = Math.round(total / userSkills.length) + "%";
+            }
+        }
+    </script>
+</body>
+</html>

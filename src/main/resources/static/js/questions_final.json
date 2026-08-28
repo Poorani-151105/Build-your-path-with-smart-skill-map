@@ -1,0 +1,2450 @@
+{
+    "Computer Science Engineering": [
+        {
+            "q": "CSE 1: Which of these is a front-end framework?",
+            "options": [
+                "Django",
+                "React",
+                "Express",
+                "Flask"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 2: What is the main purpose of a compiler?",
+            "options": [
+                "Execute code",
+                "Translate source to machine code",
+                "Debug logic",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 3: Which protocol is used for secure transmission?",
+            "options": [
+                "HTTP",
+                "HTTPS",
+                "FTP",
+                "SNMP"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 4: What is the complexity of searching in a sorted array?",
+            "options": [
+                "O(n)",
+                "O(log n)",
+                "O(n^2)",
+                "O(1)"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 5: Which is a NoSQL database?",
+            "options": [
+                "MySQL",
+                "MongoDB",
+                "Oracle",
+                "PostgreSQL"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 6: What does CSS stand for?",
+            "options": [
+                "Cascading Style Sheets",
+                "Classic Style Sheets",
+                "Common Style Sheets",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CSE 7: What is an IP address?",
+            "options": [
+                "Home address",
+                "Internet Protocol address",
+                "Intel Process",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 8: Which device is used for networking?",
+            "options": [
+                "CPU",
+                "Router",
+                "Scanner",
+                "Printer"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 9: What is Git?",
+            "options": [
+                "Language",
+                "Version control system",
+                "Browser",
+                "Database"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CSE 10: Full form of URL?",
+            "options": [
+                "Uniform Resource Locator",
+                "Universal Road Link",
+                "United Resource List",
+                "None"
+            ],
+            "answer": 0
+        }
+    ],
+    "Information Technology": [
+        {
+            "q": "IT 1: What is Cloud Computing?",
+            "options": [
+                "Storage in sky",
+                "On-demand computing services",
+                "Satellite internet",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 2: What does VPN stand for?",
+            "options": [
+                "Virtual Private Network",
+                "Visual Process Node",
+                "Very Private Name",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "IT 3: What is phishing?",
+            "options": [
+                "Fishing",
+                "Social engineering attack",
+                "Coding error",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 4: What is a Firewall?",
+            "options": [
+                "Safety wall",
+                "Network security system",
+                "An antivirus",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 5: What is Big Data?",
+            "options": [
+                "Large file size",
+                "Extremely large datasets",
+                "Old data",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 6: What is SaaS?",
+            "options": [
+                "Software as a Service",
+                "System as Service",
+                "Storage as Service",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "IT 7: Which port is for HTTPS?",
+            "options": [
+                "80",
+                "443",
+                "21",
+                "25"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 8: What is IoT?",
+            "options": [
+                "Internet of Technology",
+                "Internet of Things",
+                "Internal Online Tool",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 9: Purpose of a Proxy Server?",
+            "options": [
+                "Storing files",
+                "Acting as an intermediary",
+                "Printing",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "IT 10: What is Malware?",
+            "options": [
+                "Good program",
+                "Malicious software",
+                "Hardware part",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Electronics and Communication Engineering": [
+        {
+            "q": "ECE 1: What does a Diode do?",
+            "options": [
+                "Blocks current",
+                "Allows one-way flow",
+                "Amplifies",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 2: Unit of Capacitance?",
+            "options": [
+                "Henry",
+                "Farad",
+                "Ohm",
+                "Watt"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 3: What is LED?",
+            "options": [
+                "Light Emitting Diode",
+                "Long Electric Device",
+                "Low Engine Display",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "ECE 4: Which component amplifies signals?",
+            "options": [
+                "Resistor",
+                "Transistor",
+                "Inductor",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 5: Full form of IC?",
+            "options": [
+                "Inter Circuit",
+                "Integrated Circuit",
+                "Internal Circuit",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 6: What is Modulation?",
+            "options": [
+                "Changing signal char",
+                "Fixing power",
+                "Cooling",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "ECE 7: Use of an Oscillator?",
+            "options": [
+                "Filtering",
+                "Generating waveforms",
+                "Measuring",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 8: What is Bandwidth?",
+            "options": [
+                "Width of wire",
+                "Frequency range",
+                "Speed",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 9: Continuity is checked by?",
+            "options": [
+                "Voltmeter",
+                "Multimeter",
+                "Ammeter",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "ECE 10: What is PCB?",
+            "options": [
+                "Printed Circuit Board",
+                "Power Call Block",
+                "Process Control Board",
+                "None"
+            ],
+            "answer": 0
+        }
+    ],
+    "Electrical and Electronics Engineering": [
+        {
+            "q": "EEE 1: Formula for Ohm's Law?",
+            "options": [
+                "V=IR",
+                "P=VI",
+                "E=mc2",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "EEE 2: Unit of Resistance?",
+            "options": [
+                "Volt",
+                "Ohm",
+                "Ampere",
+                "Watt"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 3: Alternating Current (AC) changes?",
+            "options": [
+                "Magnitude",
+                "Direction",
+                "Both",
+                "None"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "EEE 4: Purpose of a Transformer?",
+            "options": [
+                "Convert AC to DC",
+                "Step up/down voltage",
+                "Store charge",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 5: Which material is the best conductor?",
+            "options": [
+                "Iron",
+                "Silver",
+                "Copper",
+                "Aluminum"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 6: Unit of Inductance?",
+            "options": [
+                "Farad",
+                "Henry",
+                "Tesla",
+                "Weber"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 7: What is a Capacitor?",
+            "options": [
+                "Resists flow",
+                "Stores electrical energy",
+                "Generates power",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 8: DC stands for?",
+            "options": [
+                "Direct Current",
+                "Digital Color",
+                "Double Current",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "EEE 9: Standard frequency in India?",
+            "options": [
+                "60Hz",
+                "50Hz",
+                "100Hz",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "EEE 10: Semiconductor example?",
+            "options": [
+                "Copper",
+                "Silicon",
+                "Gold",
+                "Glass"
+            ],
+            "answer": 1
+        }
+    ],
+    "Mechanical Engineering": [
+        {
+            "q": "MECH 1: 1st Law of Thermodynamics is related to?",
+            "options": [
+                "Pressure",
+                "Energy Conservation",
+                "Entropy",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 2: Unit of Torque?",
+            "options": [
+                "Newton",
+                "Newton-meter",
+                "Joule",
+                "Pascal"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 3: What is a gear?",
+            "options": [
+                "A tool",
+                "Toothed wheel",
+                "Engine part",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 4: Use of a Flywheel?",
+            "options": [
+                "Cooling",
+                "Storing energy",
+                "Steering",
+                "Braking"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 5: CNC stands for?",
+            "options": [
+                "Computer Numerical Control",
+                "Core Node Center",
+                "Central Net Code",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "MECH 6: Which engine uses Spark Plugs?",
+            "options": [
+                "Diesel",
+                "Petrol",
+                "Steam",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 7: What is Viscosity?",
+            "options": [
+                "Thickness",
+                "Fluid resistance to flow",
+                "Boiling pt",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 8: Purpose of Lubrication?",
+            "options": [
+                "Inc friction",
+                "Reduce friction",
+                "Heating",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 9: What is an Alloy?",
+            "options": [
+                "Pure metal",
+                "Mixture of metals",
+                "Solid gas",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MECH 10: Bernoulli's principle applies to?",
+            "options": [
+                "Solids",
+                "Fluids",
+                "Gravity",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Civil Engineering": [
+        {
+            "q": "CIVIL 1: Main constituent of concrete?",
+            "options": [
+                "Cement",
+                "Sand",
+                "Water",
+                "All of these"
+            ],
+            "answer": 3
+        },
+        {
+            "q": "CIVIL 2: What is Surveying?",
+            "options": [
+                "Checking quality",
+                "Measuring land",
+                "Painting",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CIVIL 3: Use of Plumb Bob?",
+            "options": [
+                "Leveling",
+                "Checking verticality",
+                "Length",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CIVIL 4: What is RCC?",
+            "options": [
+                "Reinforced Cement Concrete",
+                "Rapid Core Civil",
+                "Real Civil Center",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CIVIL 5: What is a Beam?",
+            "options": [
+                "Vertical part",
+                "Horizontal member",
+                "Roof",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CIVIL 6: Strongest shape in structures?",
+            "options": [
+                "Square",
+                "Circle",
+                "Triangle",
+                "None"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "CIVIL 7: Purpose of Foundation?",
+            "options": [
+                "Beauty",
+                "Transfer load to soil",
+                "Ventilation",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CIVIL 8: Unit of Pressure?",
+            "options": [
+                "Pascal",
+                "Newton",
+                "Joule",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CIVIL 9: What is Seismology?",
+            "options": [
+                "Water study",
+                "Earthquake study",
+                "Soil study",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CIVIL 10: Hardness of water checked by?",
+            "options": [
+                "Taste",
+                "EDTA method",
+                "Smell",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Chemical Engineering": [
+        {
+            "q": "CHEM 1: Symbol of Gold?",
+            "options": [
+                "Ag",
+                "Au",
+                "Gd",
+                "Pb"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 2: What is Distillation?",
+            "options": [
+                "Mixing",
+                "Separation technique",
+                "Cooling",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 3: pH of acid is?",
+            "options": [
+                "7",
+                ">7",
+                "<7",
+                "14"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "CHEM 4: Use of a Catalyst?",
+            "options": [
+                "Slow reaction",
+                "Speed up reaction",
+                "Stop reaction",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 5: What is an Exothermic reaction?",
+            "options": [
+                "Takes heat",
+                "Releases heat",
+                "No change",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 6: Father of modern chemistry?",
+            "options": [
+                "Dalton",
+                "Lavoisier",
+                "Newton",
+                "Tesla"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 7: What is Osmosis?",
+            "options": [
+                "Mixing",
+                "Solvent movement across membrane",
+                "Boiling",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 8: PVC stands for?",
+            "options": [
+                "Polyvinyl Chloride",
+                "Process Value",
+                "Pure Vine",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CHEM 9: Greenhouse gas example?",
+            "options": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Nitrogen",
+                "Argon"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CHEM 10: Periodic table has how many elements?",
+            "options": [
+                "100",
+                "118",
+                "120",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "MBBS": [
+        {
+            "q": "MBBS 1: How many bones in an adult?",
+            "options": [
+                "200",
+                "206",
+                "300",
+                "210"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 2: Largest organ?",
+            "options": [
+                "Liver",
+                "Skin",
+                "Heart",
+                "Brain"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 3: Functional unit of Kidney?",
+            "options": [
+                "Neuron",
+                "Nephron",
+                "Alveoli",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 4: Universal Donor group?",
+            "options": [
+                "AB+",
+                "O-",
+                "A+",
+                "B+"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 5: Heart's pacemaker?",
+            "options": [
+                "SA Node",
+                "AV Node",
+                "Bundle of His",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "MBBS 6: Longest bone?",
+            "options": [
+                "Spine",
+                "Femur",
+                "Rib",
+                "Humerus"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 7: Vitamin for eyes?",
+            "options": [
+                "Vit C",
+                "Vit A",
+                "Vit D",
+                "Vit K"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 8: Deficiency of Iron causes?",
+            "options": [
+                "Scurvy",
+                "Anemia",
+                "Rickets",
+                "Goitre"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "MBBS 9: Blood pressure unit?",
+            "options": [
+                "mmHg",
+                "Pascal",
+                "Bar",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "MBBS 10: Master gland?",
+            "options": [
+                "Thyroid",
+                "Pituitary",
+                "Adrenal",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "BDS": [
+        {
+            "q": "BDS 1: How many teeth in primary set?",
+            "options": [
+                "20",
+                "32",
+                "28",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "BDS 2: Hardest body substance?",
+            "options": [
+                "Bone",
+                "Enamel",
+                "Nail",
+                "Hair"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 3: Study of gums?",
+            "options": [
+                "Endodontics",
+                "Periodontics",
+                "Orthodontics",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 4: Root canal treats?",
+            "options": [
+                "Gums",
+                "Pulp",
+                "Surface",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 5: Wisdom tooth is which molar?",
+            "options": [
+                "1st",
+                "2nd",
+                "3rd",
+                "None"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "BDS 6: Halitosis means?",
+            "options": [
+                "Pain",
+                "Bad breath",
+                "Bleeding",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 7: Fluoride's use?",
+            "options": [
+                "Whitening",
+                "Preventing decay",
+                "Pain relief",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 8: Scaling is for?",
+            "options": [
+                "Extraction",
+                "Cleaning tartar",
+                "Filling",
+                "X-ray"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 9: Dentist's mirror type?",
+            "options": [
+                "Convex",
+                "Concave/Plain",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BDS 10: Braces fix?",
+            "options": [
+                "Color",
+                "Alignment",
+                "Breath",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "BPT": [
+        {
+            "q": "BPT 1: Physiotherapy deals with?",
+            "options": [
+                "Surgery",
+                "Movement/Exercise",
+                "Eyes",
+                "Teeth"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 2: Unit of range of motion?",
+            "options": [
+                "Kg",
+                "Degrees",
+                "Newton",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 3: What is Cryotherapy?",
+            "options": [
+                "Heat treat",
+                "Cold treat",
+                "Light treat",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 4: Focus of BPT?",
+            "options": [
+                "Mental health",
+                "Physical rehab",
+                "Drugs",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 5: What is a Ligament?",
+            "options": [
+                "Bone to Bone",
+                "Muscle to Bone",
+                "Skin",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "BPT 6: Purpose of TENS?",
+            "options": [
+                "Heating",
+                "Pain relief",
+                "Muscle growth",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 7: Gait refers to?",
+            "options": [
+                "Speech",
+                "Walking pattern",
+                "Vision",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 8: CPR full form?",
+            "options": [
+                "Cardiopulmonary Resuscitation",
+                "Core Process React",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "BPT 9: Spine has how many vertebrae?",
+            "options": [
+                "20",
+                "33",
+                "12",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "BPT 10: Scoliosis affects?",
+            "options": [
+                "Heart",
+                "Spine curvature",
+                "Lungs",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "B.Sc Nursing": [
+        {
+            "q": "NURS 1: First thing in patient assessment?",
+            "options": [
+                "Giving medicine",
+                "Vital signs",
+                "Sleeping",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 2: Role of a Nurse?",
+            "options": [
+                "Surgery",
+                "Patient care/advocacy",
+                "Cleaning",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 3: What is ICU?",
+            "options": [
+                "Internal Core Unit",
+                "Intensive Care Unit",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 4: Florence Nightingale is known as?",
+            "options": [
+                "Mother of Army",
+                "Lady with the Lamp",
+                "Doctor",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 5: Vital signs include?",
+            "options": [
+                "Hair color",
+                "Pulse/BP/Temp",
+                "Weight only",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 6: What is 'Triage'?",
+            "options": [
+                "Surgery",
+                "Prioritizing patients",
+                "Feeding",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 7: Purpose of IV?",
+            "options": [
+                "Breathing",
+                "Fluid/Med delivery",
+                "Vision",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 8: Hand hygiene prevents?",
+            "options": [
+                "Sleep",
+                "Infection spread",
+                "Hunger",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 9: What is Sepsis?",
+            "options": [
+                "Health",
+                "Severe infection",
+                "Cure",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "NURS 10: Ethics in nursing?",
+            "options": [
+                "Confidentiality",
+                "Gossiping",
+                "Stealing",
+                "None"
+            ],
+            "answer": 0
+        }
+    ],
+    "Pharmacy": [
+        {
+            "q": "PHARM 1: What is a Pharmacist?",
+            "options": [
+                "Doctor",
+                "Medicines expert",
+                "Nurse",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 2: What is an 'Antibiotic'?",
+            "options": [
+                "Kills bacteria",
+                "Kills virus",
+                "Kills person",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "PHARM 3: Generic vs Brand?",
+            "options": [
+                "Generic is fake",
+                "Generic has same active ingredient",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 4: What is Dosage?",
+            "options": [
+                "Flavor",
+                "Amount of medicine",
+                "Color",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 5: OTC stands for?",
+            "options": [
+                "Over the Counter",
+                "On the Case",
+                "Open To Care",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "PHARM 6: Purpose of an Antacid?",
+            "options": [
+                "Pain",
+                "Stomach acidity",
+                "Sleep",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 7: Pharmacopoeia is?",
+            "options": [
+                "Medicine museum",
+                "Official book of drug standards",
+                "Store",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 8: Meaning of 'Placebo'?",
+            "options": [
+                "Strong drug",
+                "Inactive substance",
+                "Poison",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "PHARM 9: What is FDA?",
+            "options": [
+                "Food and Drug Admin",
+                "Fast Drug Agent",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "PHARM 10: Pharmacology study of?",
+            "options": [
+                "Planets",
+                "Drugs and their effects",
+                "Plants",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "BA LLB": [
+        {
+            "q": "LLB 1: Constitution day of India?",
+            "options": [
+                "26 Jan",
+                "26 Nov",
+                "15 Aug",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 2: Minimum age to vote?",
+            "options": [
+                "16",
+                "18",
+                "21",
+                "25"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 3: FIR stands for?",
+            "options": [
+                "First Information Report",
+                "Fast Image Record",
+                "Final Info Report",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LLB 4: Law made by Parliament is?",
+            "options": [
+                "Case law",
+                "Statute",
+                "Custom",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 5: Who is the CJI?",
+            "options": [
+                "Judge",
+                "Chief Justice of India",
+                "Lawyer",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 6: Right to Equality article?",
+            "options": [
+                "12",
+                "14",
+                "19",
+                "21"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 7: What is IPC?",
+            "options": [
+                "Indian Penal Code",
+                "Indian Power Code",
+                "Initial Policy",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LLB 8: Supreme Law of Land?",
+            "options": [
+                "Bible",
+                "Constitution",
+                "Dictator",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 9: Advocate vs Lawyer?",
+            "options": [
+                "Same",
+                "Advocate handles court",
+                "Lawyer handles court",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 10: Term 'Pro Bono'?",
+            "options": [
+                "For money",
+                "For free",
+                "For fame",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "LLB": [
+        {
+            "q": "LLB 1: Constitution day of India?",
+            "options": [
+                "26 Jan",
+                "26 Nov",
+                "15 Aug",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 2: Minimum age to vote?",
+            "options": [
+                "16",
+                "18",
+                "21",
+                "25"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 3: FIR stands for?",
+            "options": [
+                "First Information Report",
+                "Fast Image Record",
+                "Final Info Report",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LLB 4: Law made by Parliament is?",
+            "options": [
+                "Case law",
+                "Statute",
+                "Custom",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 5: Who is the CJI?",
+            "options": [
+                "Judge",
+                "Chief Justice of India",
+                "Lawyer",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 6: Right to Equality article?",
+            "options": [
+                "12",
+                "14",
+                "19",
+                "21"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 7: What is IPC?",
+            "options": [
+                "Indian Penal Code",
+                "Indian Power Code",
+                "Initial Policy",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LLB 8: Supreme Law of Land?",
+            "options": [
+                "Bible",
+                "Constitution",
+                "Dictator",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 9: Advocate vs Lawyer?",
+            "options": [
+                "Same",
+                "Advocate handles court",
+                "Lawyer handles court",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLB 10: Term 'Pro Bono'?",
+            "options": [
+                "For money",
+                "For free",
+                "For fame",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "LLM": [
+        {
+            "q": "LLM 1: LLM is a ____ degree.",
+            "options": [
+                "Master",
+                "Bachelor",
+                "Diploma",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LLM 2: Focus of LLM?",
+            "options": [
+                "Basic law",
+                "Specialization",
+                "Surgery",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 3: Legal research is core in?",
+            "options": [
+                "School",
+                "LLM",
+                "TV",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 4: International Law is?",
+            "options": [
+                "Local",
+                "Between nations",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 5: Jurisprudence is?",
+            "options": [
+                "Doctor",
+                "Philosophy of Law",
+                "Artist",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 6: Intellectual Property includes?",
+            "options": [
+                "Land",
+                "Copyright/Patents",
+                "Car",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 7: Tort Law is about?",
+            "options": [
+                "Cables",
+                "Civil wrongs",
+                "Criminals",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 8: Constitutional Law focus?",
+            "options": [
+                "Crime",
+                "Structure of state/rights",
+                "Shopping",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 9: Arbitration is?",
+            "options": [
+                "Starting fight",
+                "Alternative dispute resolution",
+                "Police action",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LLM 10: Purpose of Dissertation?",
+            "options": [
+                "Painting",
+                "In-depth research",
+                "Cooking",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Diploma in Mechanical Engineering": [
+        {
+            "q": "DIP-MECH 1: Unit of Force?",
+            "options": [
+                "Watt",
+                "Newton",
+                "Pascal",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 2: Lathe is used for?",
+            "options": [
+                "Cooking",
+                "Machining",
+                "Painting",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 3: Welding joins?",
+            "options": [
+                "Metals",
+                "Plastic",
+                "Paper",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-MECH 4: Heat engine example?",
+            "options": [
+                "Fan",
+                "Steam Engine",
+                "Light",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 5: Bearing use?",
+            "options": [
+                "Inc friction",
+                "Support moving parts",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 6: Steel is an alloy of?",
+            "options": [
+                "Iron/Carbon",
+                "Copper/Tin",
+                "Lead",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-MECH 7: Vernier Caliper measures?",
+            "options": [
+                "Weight",
+                "Internal/External dim",
+                "Color",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 8: Boilers generate?",
+            "options": [
+                "Water",
+                "Steam",
+                "Ice",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 9: Friction opposes?",
+            "options": [
+                "Stationary",
+                "Motion",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-MECH 10: 4-Stroke engine has?",
+            "options": [
+                "1 cycle",
+                "4 distinct movements",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        }
+    ],
+    "Diploma in Civil Engineering": [
+        {
+            "q": "DIP-CIVIL 1: Brick size?",
+            "options": [
+                "19x9x9 cm",
+                "50x50 cm",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CIVIL 2: Leveling staff checks?",
+            "options": [
+                "Beauty",
+                "Elevation",
+                "Color",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CIVIL 3: Workability of concrete?",
+            "options": [
+                "Slump test",
+                "Taste test",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CIVIL 4: Sand is a ____ aggregate.",
+            "options": [
+                "Fine",
+                "Coarse",
+                "Light",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CIVIL 5: Curing is for?",
+            "options": [
+                "Drying",
+                "Hydration/Strength",
+                "Painting",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CIVIL 6: Purpose of Road Camber?",
+            "options": [
+                "Design",
+                "Drainage",
+                "Speed",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CIVIL 7: Scaler to measure?",
+            "options": [
+                "Compass",
+                "Theodolite",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CIVIL 8: Mortar is mixture of?",
+            "options": [
+                "Cement/Sand",
+                "Cement/Agg",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CIVIL 9: Grade of concrete shows?",
+            "options": [
+                "Weight",
+                "Compressive strength",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CIVIL 10: AutoCAD is for?",
+            "options": [
+                "Gaming",
+                "Drafting/Design",
+                "Music",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Diploma in Electrical Engineering": [
+        {
+            "q": "DIP-EEE 1: Ammeter measures?",
+            "options": [
+                "Voltage",
+                "Current",
+                "Power",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-EEE 2: Battery stores?",
+            "options": [
+                "AC",
+                "DC",
+                "Chemical Energy",
+                "Both 2/3"
+            ],
+            "answer": 3
+        },
+        {
+            "q": "DIP-EEE 3: Insulator example?",
+            "options": [
+                "Copper",
+                "Rubber",
+                "Silver",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-EEE 4: Series circuit: Current is?",
+            "options": [
+                "Same",
+                "Different",
+                "Zero",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-EEE 5: Parallel circuit: Voltage is?",
+            "options": [
+                "Same",
+                "Different",
+                "Zero",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-EEE 6: Fuse is used for?",
+            "options": [
+                "Beauty",
+                "Protection",
+                "Increasing power",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-EEE 7: Multimeter can't measure?",
+            "options": [
+                "Color",
+                "Current",
+                "Voltage",
+                "Resistance"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-EEE 8: AC to DC?",
+            "options": [
+                "Transformer",
+                "Rectifier",
+                "Motor",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-EEE 9: Earth wire color India?",
+            "options": [
+                "Red",
+                "Green",
+                "Blue",
+                "Black"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-EEE 10: Wattmeter measures?",
+            "options": [
+                "Current",
+                "Power",
+                "Voltage",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Diploma in Computer Science": [
+        {
+            "q": "DIP-CS 1: Binary 0 and 1 represent?",
+            "options": [
+                "Off/On",
+                "Up/Down",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CS 2: Windows is a?",
+            "options": [
+                "Hardware",
+                "Operating System",
+                "Browser",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 3: Keyboard is a ____ device.",
+            "options": [
+                "Output",
+                "Input",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 4: Monitor is a ____ device.",
+            "options": [
+                "Input",
+                "Output",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 5: Virus is a?",
+            "options": [
+                "Disease",
+                "Malicious software",
+                "File",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 6: WWW stands for?",
+            "options": [
+                "World Wide Web",
+                "World War Web",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CS 7: Google is a?",
+            "options": [
+                "Network",
+                "Search Engine",
+                "OS",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 8: RAM is?",
+            "options": [
+                "Permanent",
+                "Temporary",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CS 9: CPU speed unit?",
+            "options": [
+                "Hz",
+                "Kg",
+                "Meter",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CS 10: PDF stands for?",
+            "options": [
+                "Portable Doc Format",
+                "Point Data File",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Diploma in Chemical Engineering": [
+        {
+            "q": "DIP-CHEM 1: Symbol of Oxygen?",
+            "options": [
+                "O",
+                "Ox",
+                "O2",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CHEM 2: Water formula?",
+            "options": [
+                "CO2",
+                "H2O",
+                "O2",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CHEM 3: Salt is?",
+            "options": [
+                "NaCl",
+                "NaOH",
+                "HCl",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CHEM 4: Boiling point of water C?",
+            "options": [
+                "0",
+                "50",
+                "100",
+                "200"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "DIP-CHEM 5: pH 7 is?",
+            "options": [
+                "Acid",
+                "Base",
+                "Neutral",
+                "None"
+            ],
+            "answer": 2
+        },
+        {
+            "q": "DIP-CHEM 6: Filtration separates?",
+            "options": [
+                "Solids from liquids",
+                "Gases",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CHEM 7: Combustion needs?",
+            "options": [
+                "Helium",
+                "Oxygen",
+                "Nitrogen",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CHEM 8: Rusting needs?",
+            "options": [
+                "Dry air",
+                "Oxygen + Moisture",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIP-CHEM 9: Crude oil gives?",
+            "options": [
+                "Petrol/Diesel",
+                "Water",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIP-CHEM 10: Chemistry study of?",
+            "options": [
+                "Motion",
+                "Matter/Changes",
+                "Life",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Communication Skill": [
+        {
+            "q": "COMM 1: Communication is?",
+            "options": [
+                "One way",
+                "Two way process",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 2: 70% of communication is?",
+            "options": [
+                "Words",
+                "Non-verbal",
+                "Tone",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 3: Listening involves?",
+            "options": [
+                "Just hearing",
+                "Understanding",
+                "Ignoring",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 4: Noise is a?",
+            "options": [
+                "Link",
+                "Barrier",
+                "Source",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 5: Feedback is?",
+            "options": [
+                "The start",
+                "The response",
+                "Noise",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 6: Clarity means?",
+            "options": [
+                "Using big words",
+                "Being simple/clear",
+                "Silence",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 7: Posture sends?",
+            "options": [
+                "Codes",
+                "Messages",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 8: Eye contact shows?",
+            "options": [
+                "Shyness",
+                "Confidence",
+                "Anger",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 9: Empathy means?",
+            "options": [
+                "Sympathy",
+                "Walking in others' shoes",
+                "Rude",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "COMM 10: Email is?",
+            "options": [
+                "Verbal",
+                "Written comm",
+                "Non-verbal",
+                "None"
+            ],
+            "answer": 1
+        }
+    ],
+    "Leadership Skill": [
+        {
+            "q": "LEAD 1: Boss vs Leader?",
+            "options": [
+                "Same",
+                "Leader inspires",
+                "Boss scares",
+                "Both 2/3"
+            ],
+            "answer": 3
+        },
+        {
+            "q": "LEAD 2: Vision means?",
+            "options": [
+                "Seeing",
+                "Direction/Goal",
+                "Dream",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 3: Delegation helps?",
+            "options": [
+                "Waste time",
+                "Empower others",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 4: Accountability is?",
+            "options": [
+                "Blaming",
+                "Responsibility",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 5: Goal setting method?",
+            "options": [
+                "SMART",
+                "DUMMY",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "LEAD 6: Integrity is?",
+            "options": [
+                "Being rich",
+                "Being honest/consistent",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 7: Motivation is?",
+            "options": [
+                "Boredom",
+                "Encouraging team",
+                "Firing",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 8: Decision making needs?",
+            "options": [
+                "Fear",
+                "Critical thinking",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 9: Teamwork needs?",
+            "options": [
+                "Conflict",
+                "Collaboration",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "LEAD 10: Influence is?",
+            "options": [
+                "Power to change behavior",
+                "Money",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        }
+    ],
+    "Critical Thinking": [
+        {
+            "q": "CRIT 1: Thinking about thinking is?",
+            "options": [
+                "Metacognition",
+                "Dreaming",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CRIT 2: Analyzing facts objectively is?",
+            "options": [
+                "Guessing",
+                "Critical thinking",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 3: First step in problem solving?",
+            "options": [
+                "Solving",
+                "Defining problem",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 4: Basis of critical thinking?",
+            "options": [
+                "Opinion",
+                "Logic/Evidence",
+                "Emotion",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 5: Bias is?",
+            "options": [
+                "A tool",
+                "Prejudice",
+                "Fact",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 6: Evaluating means?",
+            "options": [
+                "Judging value/quality",
+                "Ignoring",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CRIT 7: Inference is?",
+            "options": [
+                "Fact",
+                "Conclusion from evidence",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 8: Open-mindedness means?",
+            "options": [
+                "Being weak",
+                "Considering new ideas",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "CRIT 9: Sequence of events is?",
+            "options": [
+                "Chronology",
+                "Random",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "CRIT 10: Skepticism is?",
+            "options": [
+                "Believing everything",
+                "Questioning info",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        }
+    ],
+    "Digital Skill": [
+        {
+            "q": "DIGI 1: Digital literacy is?",
+            "options": [
+                "Reading books",
+                "Using tech safely",
+                "Gaming only",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 2: Strong password has?",
+            "options": [
+                "'123'",
+                "Mixed chars/length",
+                "Your name",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 3: Social media privacy?",
+            "options": [
+                "Public for all",
+                "Setting controls",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 4: Online etiquette is?",
+            "options": [
+                "Netiquette",
+                "Rudeness",
+                "None",
+                "All"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIGI 5: Data privacy is?",
+            "options": [
+                "Sharing passwords",
+                "Protecting info",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 6: Reliable info check?",
+            "options": [
+                "Source verify",
+                "First link only",
+                "Viral post",
+                "None"
+            ],
+            "answer": 0
+        },
+        {
+            "q": "DIGI 7: Phishing protection?",
+            "options": [
+                "Clicking links",
+                "Verify sender",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 8: Digital footprint is?",
+            "options": [
+                "Step online",
+                "Trace of activities",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 9: Cloud backup avoids?",
+            "options": [
+                "Heat",
+                "Data loss",
+                "Cold",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "q": "DIGI 10: Modern tool for work?",
+            "options": [
+                "Typewriter",
+                "Trello/Slack",
+                "None",
+                "All"
+            ],
+            "answer": 1
+        }
+    ]
+}

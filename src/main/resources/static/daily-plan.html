@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Plan | Smart Skill Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .module-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .module-card:hover {
+            transform: translateX(10px);
+            background: rgba(255,255,255,0.05);
+        }
+        .module-card.completed {
+            opacity: 0.6;
+            background: rgba(34, 211, 238, 0.05);
+        }
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--accent-color);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .completed .checkbox {
+            background: var(--accent-color);
+        }
+        .completed .checkbox::after {
+            content: "✓";
+            color: var(--bg-dark);
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Smart Skill Map</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="#" onclick="logout()" style="color: #ef4444;">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding: 40px 5%; max-width: 1000px; margin: 0 auto;">
+        <div id="noPath" style="display: none; text-align: center; padding: 5rem 0;">
+            <h2>No Active Learning Path</h2>
+            <p style="color: var(--text-secondary); margin: 1rem 0 2rem;">Enroll in a career roadmap to start your daily plan.</p>
+            <a href="roadmap.html" class="btn btn-primary">Go to Roadmap</a>
+        </div>
+
+        <div id="activePath">
+            <div style="margin-bottom: 3rem;">
+                <span style="color: var(--accent-color); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">Current Focus</span>
+                <h1 id="pathTitle" style="font-size: 2.5rem; margin: 0.5rem 0;">Course Name</h1>
+                <div style="display: flex; align-items: center; gap: 2rem; margin-top: 1rem;">
+                    <div style="flex: 1; height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                        <div id="overallProgress" style="width: 0%; height: 100%; background: var(--primary-gradient); transition: width 0.5s ease;"></div>
+                    </div>
+                    <span id="progressText" style="font-weight: 700;">0% Complete</span>
+                </div>
+            </div>
+
+            <div id="taskModule">
+                <h2 id="taskTitle" style="margin-bottom: 2rem; color: #fff;">Task Module</h2>
+                <div id="dailyModules">
+                    <!-- Days 1-7 injected here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+        let enrolledPath = null;
+        let progress = {};
+        let allProgress = {};
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            try {
+                // Fetch latest persistent profile data
+                const response = await fetch(`/api/profile/${user.id}`, {
+                    headers: { 'Authorization': `Bearer ${user.token}` }
+                });
+                const data = await response.json();
+                
+                enrolledPath = data.enrolledPath;
+                allProgress = data.user.progressJson ? JSON.parse(data.user.progressJson) : {};
+
+                if (!enrolledPath) {
+                    document.getElementById('noPath').style.display = 'block';
+                    document.getElementById('activePath').style.display = 'none';
+                    return;
+                }
+                
+                progress = allProgress["course_" + enrolledPath.id] || {};
+
+                renderPlan();
+            } catch (err) {
+                console.error("Profile sync error:", err);
+            }
+        });
+
+        function renderPlan() {
+            document.getElementById('pathTitle').innerText = enrolledPath.title;
+            
+            // Map the roadmap steps
+            const roadmap = typeof enrolledPath.roadmapJson === 'string' ? JSON.parse(enrolledPath.roadmapJson) : enrolledPath.roadmapJson;
+            const dailyTrack = typeof enrolledPath.dailyTrackJson === 'string' ? JSON.parse(enrolledPath.dailyTrackJson) : enrolledPath.dailyTrackJson;
+            
+            if (roadmap && roadmap.length > 0) {
+                document.getElementById('taskTitle').innerText = roadmap[0].task;
+            }
+
+            const container = document.getElementById('dailyModules');
+            container.innerHTML = '';
+
+            const days = dailyTrack || [
+                "Foundation & Core Concepts",
+                "Advanced Theory & Case Studies",
+                "Tooling & Environment Setup",
+                "Practical Implementation Part 1",
+                "Practical Implementation Part 2",
+                "Testing & Quality Assurance",
+                "Project Submission & Review"
+            ];
+
+            days.forEach((dayLabel, idx) => {
+                const dayNum = idx + 1;
+                const isCompleted = progress[dayNum] || false;
+                
+                const card = document.createElement('div');
+                card.className = `glass-card module-card ${isCompleted ? 'completed' : ''}`;
+                card.onclick = () => toggleDay(dayNum);
+                
+                card.innerHTML = `
+                    <div class="checkbox"></div>
+                    <div style="flex: 1;">
+                        <span style="color: var(--accent-color); font-size: 0.8rem; font-weight: 800;">DAY ${dayNum}</span>
+                        <h4 style="margin-top: 5px;">${dayLabel}</h4>
+                    </div>
+                    <span style="color: var(--text-secondary); font-size: 0.8rem;">2h Est.</span>
+                `;
+                container.appendChild(card);
+            });
+
+            updateProgressUI();
+        }
+
+        async function toggleDay(dayNum) {
+            const user = JSON.parse(localStorage.getItem('user'));
+            progress[dayNum] = !progress[dayNum];
+            allProgress["course_" + enrolledPath.id] = progress;
+            
+            // Local update for speed
+            renderPlan();
+
+            // Backend sync
+            try {
+                await fetch(`/api/profile/${user.id}/progress`, {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${user.token}`
+                    },
+                    body: JSON.stringify(allProgress)
+                });
+            } catch (err) {
+                console.error("Progress sync failure:", err);
+            }
+        }
+
+
+        function updateProgressUI() {
+            const total = 7;
+            const completed = Object.values(progress).filter(v => v === true).length;
+            const percent = Math.round((completed / total) * 100);
+            
+            document.getElementById('overallProgress').style.width = percent + '%';
+            document.getElementById('progressText').innerText = percent + '% Complete';
+        }
+    </script>
+</body>
+</html>
